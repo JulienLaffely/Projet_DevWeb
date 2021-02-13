@@ -20,3 +20,17 @@ footer{
   font-family: Arial, sans-serif;
   font-size: 18px ;
 }
+
+legend{
+	background-color: yellow;
+	color:black;
+	font-family: Georgia, serif;
+}
+
+fieldset{
+	border: solid 3px;
+	border-color: yellow ;
+	background-color: gray ;
+	margin-left: 300px;
+	margin-right: 300px;
+}
