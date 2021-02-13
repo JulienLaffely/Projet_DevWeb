@@ -6,7 +6,7 @@
 
 		public function __construct($action)
 		{
-			$this->_file = 'views/view'.$action.'php';
+			$this->_file = 'views/view'.$action.'.php';
 		}
 
 		// Genere et affiche la vue
@@ -22,7 +22,7 @@
 		}
 
 		// Genere un fichier vue et renvoie le résultat produit
-		private function generateFile($file,$date)
+		private function generateFile($file,$data)
 		{
 			if(file_exists($file))
 			{
