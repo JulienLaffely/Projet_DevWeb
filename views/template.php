@@ -23,7 +23,7 @@
 				</fieldset>
 			</form>
 		<footer>
-				<p><b>Crée par Julien le giga boss</b></p>
+				<p><b>Crée par Julien et Guillaume les gigas boss</b></p>
 		</footer>
 	</body>
 </html>
