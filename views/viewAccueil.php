@@ -1,5 +1,18 @@
-<?php $this->_t = 'AC Montreuil Juigné';
-	foreach ($joueurs as $joueur) : ?>
-<h2><?= $joueur->nom() ?></h2>
-<time><?= $joueur->ddn() ?> </time>
-<?php endforeach; ?>
+<?php $this->_t = 'AC Montreuil Juigné'; ?>
+
+		<header>
+			<center><h1>Bienvenue sur le site de l'AC Montreuil-juigné</h1></center>
+		</header>
+
+
+<form method="post">
+				<fieldset>
+					<legend>Authentification</legend>
+					<label style="margin-left: 50px">Adresse mail : </label>
+					<input type="login" name="login"/>
+					<label style="margin-left: 50px">Mot de passe : </label>
+					<input type="password" name="pswd" />
+					<input type="submit" value="Connexion" name="log" style="margin-left: 130px"/>
+
+				</fieldset>
+</form>
