@@ -3,25 +3,18 @@
 
 	class ControllerAccueil
 	{
-		private $_joueurManager;
 		private $_view;
 
-		public function __construct($url)
+		public function __construct()
 		{
-			if(isset($url) && count(array($url))>1)
-				throw new Exception('Page introuvable');
-			else 
-				$this->joueurs();
+				$this->_view = new View('Accueil');
+				$this->_view->generate();
 		}
 
-		private function joueurs()
-		{
-			$this->_joueurManager = new JoueurManager ;
-			$joueurs = $this->_joueurManager->getJoueurs();
-
-			$this->_view = new View('Accueil');
-			$this->_view->generate(array('joueurs' => $joueurs));
+		public function alerteconnexion(){
+			echo "<script type='text/javascript'>alert('Veuillez remplir les deux champs !');</script>";
 		}
+
 	}	
 
 ?>

@@ -10,10 +10,10 @@
 		}
 
 		// Genere et affiche la vue
-		public function generate($data)
+		public function generate()
 		{
 			// Partie spécifique de la vue
-			$content = $this->generateFile($this->_file, $data);
+			$content = $this->generateFile($this->_file);
 
 			// Template
 			$view = $this->generateFile('views/template.php',array('t' => $this->_t, 'content' => $content));
@@ -22,7 +22,7 @@
 		}
 
 		// Genere un fichier vue et renvoie le résultat produit
-		private function generateFile($file,$data)
+		private function generateFile($file,$data=[])
 		{
 			if(file_exists($file))
 			{

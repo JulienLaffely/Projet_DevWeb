@@ -8,7 +8,7 @@
 <form method="post">
 				<fieldset>
 					<legend>Authentification</legend>
-					<label style="margin-left: 50px">Adresse mail : </label>
+					<label style="margin-left: 50px">Identifiant : </label>
 					<input type="login" name="login"/>
 					<label style="margin-left: 50px">Mot de passe : </label>
 					<input type="password" name="pswd" />

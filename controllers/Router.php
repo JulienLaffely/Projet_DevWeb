@@ -10,34 +10,33 @@ class Router
 	{
 		try
 		{
-			// Chargement automatique des classes
-			spl_autoload_register(function($class){
-				require_once('models/'.$class.'.php');
-			});
-
-			$url = '';
-
 			// Le routeur est inclus selon l'action de l'utilisateur
-			if(isset($_GET['url']))
-			{
-				$url= explode('/', filter_var($_GET['url'],FILTER_SANITIZE_URL));
-
-				$controller = ucfirst(strtolower($url[0]));
-				$controllerClass = "Controller ".$controller;
-				$controllerFile = "controller/ ".$controllerClass." .php";
-
-				if(file_exists($controllerFile))
+			if(isset($_POST['log'])){
+				if(!empty($_POST['login'])&&!empty($_POST['pswd']))
 				{
-					require_once($controllerFile);
-					$this->_ctrl = new $controllerClass($url);
+
+					$controller = "Connexion";
+					$controllerClass = "Controller".$controller;
+					$controllerFile = "controllers/".$controllerClass.".php";
+
+					if(file_exists($controllerFile))
+					{
+						require_once($controllerFile);
+						$this->_ctrl = new $controllerClass($_POST['login'],$_POST['pswd']);
+					}
+					else 
+						throw new Exception('Page introuvable');
 				}
-				else 
-					throw new Exception('Page introuvable');
+				else {
+					require_once('controllers/ControllerAccueil.php');
+					$this->_ctrl = new ControllerAccueil();
+					$this->_ctrl->alerteconnexion();
+				}
 			}
 			else
 			{
 				require_once('controllers/ControllerAccueil.php');
-				$this->_ctrl = new ControllerAccueil($url);
+				$this->_ctrl = new ControllerAccueil();
 			}
 		}
 		// Gestion des ereurs
