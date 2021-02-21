@@ -26,6 +26,10 @@ class Router
 						require_once('controllers/ControllerConvocation.php');
 						$this->_ctrl = new ControllerConvocation();
 					break;
+					case "Accueil" :
+						require_once('controllers/ControllerAccueil.php');
+						$this->_ctrl = new ControllerAccueil();
+					break;
 				}
 			}
 			else if(isset($_POST['log'])){
