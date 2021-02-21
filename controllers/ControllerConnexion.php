@@ -24,7 +24,6 @@
 		public function alerteconnexion(){
 			echo "<script type='text/javascript'>alert('Identifiant ou mot de passe incorrect !');</script>";
 		}
-
 	}	
 
 ?>

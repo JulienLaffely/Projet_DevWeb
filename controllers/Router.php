@@ -11,7 +11,24 @@ class Router
 		try
 		{
 			// Le routeur est inclus selon l'action de l'utilisateur
-			if(isset($_POST['log'])){
+
+			if(isset($_POST['onglet'])){
+				switch($_POST['onglet']){
+					case "Calendrier" :
+						require_once('controllers/ControllerCalendrier.php');
+						$this->_ctrl = new ControllerCalendrier();
+						break;
+					case "Planning" :
+						require_once('controllers/ControllerPlanning.php');
+						$this->_ctrl = new ControllerPlanning();
+					break;
+					case "Convocation" :
+						require_once('controllers/ControllerConvocation.php');
+						$this->_ctrl = new ControllerConvocation();
+					break;
+				}
+			}
+			else if(isset($_POST['log'])){
 				if(!empty($_POST['login'])&&!empty($_POST['pswd']))
 				{
 
@@ -38,6 +55,8 @@ class Router
 				require_once('controllers/ControllerAccueil.php');
 				$this->_ctrl = new ControllerAccueil();
 			}
+
+
 		}
 		// Gestion des ereurs
 		catch(Exception $e)
