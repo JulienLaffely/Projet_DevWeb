@@ -18,7 +18,7 @@ class Router
 						require_once('controllers/ControllerCalendrier.php');
 						$this->_ctrl = new ControllerCalendrier();
 						break;
-					case "Planning" :
+					case "Planning Absences" :
 						require_once('controllers/ControllerPlanning.php');
 						$this->_ctrl = new ControllerPlanning();
 					break;

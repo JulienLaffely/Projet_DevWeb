@@ -12,6 +12,7 @@
 		// Genere et affiche la vue
 		public function generate()
 		{
+
 			// Partie spécifique de la vue
 			$content = $this->generateFile($this->_file);
 

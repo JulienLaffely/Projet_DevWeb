@@ -9,6 +9,10 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
+table{
+    position:absolute;
+}
+
 footer{
   position: absolute;
   bottom: 0;
