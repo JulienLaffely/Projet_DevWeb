@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : Dim 21 fév. 2021 à 16:18
+-- Généré le : lun. 22 fév. 2021 à 14:18
 -- Version du serveur :  8.0.21
 -- Version de PHP : 7.3.21
 
@@ -31,7 +31,7 @@ DROP TABLE IF EXISTS `authentification`;
 CREATE TABLE IF NOT EXISTS `authentification` (
   `login` varchar(50) COLLATE utf8_bin NOT NULL,
   `mdp` varchar(50) COLLATE utf8_bin NOT NULL,
-  `role` varchar(20) COLLATE utf8_bin NOT NULL
+  `role` enum('Entraineur','Secrétaire','','') COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
@@ -41,7 +41,8 @@ CREATE TABLE IF NOT EXISTS `authentification` (
 INSERT INTO `authentification` (`login`, `mdp`, `role`) VALUES
 ('GGrenon', 'Bo$$DelFuego', 'Entraineur'),
 ('JLaffely', 'MiNeCrAfT53100', 'Entraineur'),
-('DLesaint', 'ViveLapero49', 'Entraineur');
+('DLesaint', 'ViveLapero49', 'Entraineur'),
+('GHunault', 'ViveLeGouter', 'Secrétaire');
 
 -- --------------------------------------------------------
 
@@ -52,8 +53,8 @@ INSERT INTO `authentification` (`login`, `mdp`, `role`) VALUES
 DROP TABLE IF EXISTS `joueurs`;
 CREATE TABLE IF NOT EXISTS `joueurs` (
   `id` int NOT NULL,
-  `nom` varchar(30) COLLATE utf8_bin NOT NULL,
-  `prenom` varchar(30) COLLATE utf8_bin NOT NULL,
+  `nom` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `prenom` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `ddn` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
