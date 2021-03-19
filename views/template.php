@@ -22,7 +22,7 @@
 			<?= $content ?>
 			</div>
 		<footer>
-				<p><b>Crée par Julien et Guillaume le giga boss</b></p>
+				
 		</footer>
 	</body>
 </html>

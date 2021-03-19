@@ -9,12 +9,7 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
-table{
-    position:absolute;
-}
-
 footer{
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 2.5rem; 
@@ -152,3 +147,10 @@ fieldset{
 
 }
 
+#bouttons4{
+    margin-left: 600px;
+}
+
+#calendrier{
+  margin-left: 720px;
+}
