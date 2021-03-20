@@ -2,24 +2,26 @@
 
 
 #corps{
-	position:absolute;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 body{
     font-family: 'Exo', sans-serif;
 }
 
-footer{
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem; 
-  font-size: 18px ;
-}
-
-fieldset{
+#accueil{
 	border: solid 3px;
 	margin-left: 300px;
 	margin-right: 300px;
+}
+
+
+#calendrier{
+    display: block;
+    margin-left : auto;
+    margin-right: auto;
 }
 
 /* FOND ET ANIMATION */
@@ -147,10 +149,4 @@ fieldset{
 
 }
 
-#bouttons4{
-    margin-left: 600px;
-}
 
-#calendrier{
-  margin-left: 720px;
-}

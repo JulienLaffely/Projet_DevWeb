@@ -6,7 +6,7 @@
 
 
 <form method="post">
-				<fieldset>
+				<fieldset id="accueil">
 					<legend>Authentification</legend>
 					<label style="margin-left: 50px">Identifiant : </label>
 					<input type="login" name="login"/>
