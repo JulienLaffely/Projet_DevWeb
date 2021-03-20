@@ -7,6 +7,7 @@
 </form>
 </center>
 </br>
-<input type="date" id="calendrier" 
-       min="2021-08-01" max="2022-07-31" value="2021-08-01" onchange="date()">
+
+
+
 

@@ -11,8 +11,11 @@ class Router
 		try
 		{
 			// Le routeur est inclus selon l'action de l'utilisateur
-
-			if(isset($_POST['onglet'])){
+			if(isset($_POST['modifabs'])){
+				require_once('controllers/ControllerPlanning.php');
+				$this->_ctrl = new ControllerPlanning();
+			}
+			else if(isset($_POST['onglet'])){
 				switch($_POST['onglet']){
 					case "Calendrier" :
 						require_once('controllers/ControllerCalendrier.php');

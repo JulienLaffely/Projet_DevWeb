@@ -24,6 +24,31 @@ body{
     margin-right: auto;
 }
 
+table {
+    margin-left : auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+table,td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td{
+    text-align: center;
+}
+
+select {
+    width:200px;
+}
+
+#modifabs {
+     display: block;
+    margin-left : auto;
+    margin-right: auto;
+}
+
 /* FOND ET ANIMATION */
 
 .area{

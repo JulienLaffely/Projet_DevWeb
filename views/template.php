@@ -25,6 +25,4 @@
 	<body >
 		<div id="corps">
 			<?= $content ?>
-			</div>
-	</body>
-</html>
+			
