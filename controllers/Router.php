@@ -10,8 +10,11 @@ class Router
 	{
 		try
 		{
-			// Le routeur est inclus selon l'action de l'utilisateur
-			if(isset($_POST['modifabs'])){
+			if(isset($_POST['NewJoueur'])){
+				require_once('controllers/ControllerEffectif.php');
+				$this->_ctrl = new ControllerEffectif();
+			}	
+			else if(isset($_POST['modifabs'])){
 				require_once('controllers/ControllerPlanning.php');
 				$this->_ctrl = new ControllerPlanning();
 			}
@@ -32,6 +35,10 @@ class Router
 					case "Accueil" :
 						require_once('controllers/ControllerAccueil.php');
 						$this->_ctrl = new ControllerAccueil();
+					break;
+					case "Effectif" :
+						require_once('controllers/ControllerEffectif.php');
+						$this->_ctrl = new ControllerEffectif();
 					break;
 				}
 			}

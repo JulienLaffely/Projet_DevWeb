@@ -10,3 +10,4 @@
 					$this->_view->generate();
 		}
 	}
+?>

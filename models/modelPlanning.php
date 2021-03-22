@@ -5,12 +5,16 @@ require_once("Model.php");
 class modelPlanning extends Model
 {
 
-	public $_joueurs;
+	private $_joueurs;
 
 	public function __construct()
 	{
 		$bdd=$this->getBdd();
 		$this->_joueurs=$bdd->query('SELECT id, nom , prenom FROM joueurs');
+	}
+
+	public function Joueurs(){
+		return $this->_joueurs;
 	}
 
 	public function GetAbsJoueur($id,$date) {

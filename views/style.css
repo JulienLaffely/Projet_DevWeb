@@ -11,7 +11,7 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
-#accueil{
+#accueil,#Enregistrement{
 	border: solid 3px;
 	margin-left: 300px;
 	margin-right: 300px;
@@ -24,20 +24,37 @@ body{
     margin-right: auto;
 }
 
-table {
+#tablep {
     margin-left : auto;
     margin-right: auto;
     width: 50%;
 }
 
-table,td {
+#tablep,#tdp {
     border-collapse: collapse;
     border: 1px solid black;
 }
 
-td{
+#tdp{
     text-align: center;
 }
+
+#tableE {
+    margin-left : auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#tableE,#tde {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#tde{
+    text-align: center;
+    width : 20%;
+}
+
 
 select {
     width:200px;
@@ -47,6 +64,10 @@ select {
      display: block;
     margin-left : auto;
     margin-right: auto;
+}
+
+#BoutAjoutJoueur {
+
 }
 
 /* FOND ET ANIMATION */

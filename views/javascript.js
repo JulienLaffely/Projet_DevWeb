@@ -1,6 +1,7 @@
 var jours = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+let anciennedate="2021-08-01";
 
-function dateP(bdd)  {
+function dateP()  {
   		var input = document.getElementById("calendrier").value;
   		var date = new Date(input);
   		var jourDeLaSemaine = date.getUTCDay();
@@ -8,7 +9,7 @@ function dateP(bdd)  {
 
   		if (jours[jourDeLaSemaine]!="Sunday"){
   			alert("Veuillez choisir un dimanche !");
-  			document.getElementById("calendrier").value="2021-08-01";
+  			document.getElementById("calendrier").value=anciennedate;
   		}
       else{
         let i = 1 ;
@@ -33,7 +34,7 @@ function dateP(bdd)  {
           };
           xhttp.open("GET","abscents.json",true);
           xhttp.send();
-
+          anciennedate=document.getElementById("calendrier").value;
       }
 }
 

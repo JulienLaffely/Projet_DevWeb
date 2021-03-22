@@ -4,9 +4,9 @@
 
 	class ControllerPlanning
 	{
-		public $_view;
-		public $_model ;
-		public $_joueurDate;
+		private $_view;
+		private $_model ;
+		private $_joueurDate;
 
 		public function __construct()
 		{	
@@ -24,21 +24,21 @@
 			}
 			?>
 
-			<form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+			<form method="post">
 			<input type='date' id='calendrier' name='calendrier' min='2021-08-01' max='2022-07-31' value='<?php echo $dateActuel ;?>' onchange="<?php $abs=fopen('abscents.json','w+');fwrite($abs,json_encode($this->_model->GetAllAbs()));fclose($abs);?> dateP()">
        		<?php
 			echo "</br></br></br>";
-			echo "<table>";
-			echo "<tr>
-						<td><b>NOM</b></td>
-						<td><b>PRENOM</b></td>
-						<td><b>RAISON ABSCENCE</b></td>
+			echo "<table id='tablep'>";
+			echo "<tr id='trp'>
+						<td id='tdp'><b>NOM</b></td>
+						<td id='tdp'><b>PRENOM</b></td>
+						<td id='tdp'><b>RAISON ABSCENCE</b></td>
 				  </tr>";
-			foreach ($this->_model->_joueurs as $joueur) {
-				echo "<tr>
-						<td>$joueur[1]</td>
-						<td>$joueur[2]</td>
-						<td>
+			foreach ($this->_model->Joueurs() as $joueur) {
+				echo "<tr  id='trp'>
+						<td id='tdp'>$joueur[1]</td>
+						<td id='tdp'>$joueur[2]</td>
+						<td id='tdp'>
 							<select class='selector' id='$joueur[0]' name='$joueur[0]'>
 								<option value='present'></option>
 								<option value='ABS'>Abscent</option>
