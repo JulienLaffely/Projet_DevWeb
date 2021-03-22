@@ -24,9 +24,8 @@
 			?>
 
 			<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-			<?php
-			echo "<input type='date' id='calendrier' name='calendrier' min='2021-08-01' max='2022-07-31' value=$dateActuel onchange='dateP(".$this->_model->GetAllAbs().")'>";
-       		
+			<input type='date' id='calendrier' name='calendrier' min='2021-08-01' max='2022-07-31' value='<?php echo $dateActuel ;?>' onchange="<?php $abs=fopen('abscents.json','w+');fwrite($abs,json_encode($this->_model->GetAllAbs()));fclose($abs);?> dateP()">
+       		<?php
 			echo "</br></br></br>";
 			echo "<table>";
 			echo "<tr>
@@ -39,7 +38,7 @@
 						<td>$joueur[1]</td>
 						<td>$joueur[2]</td>
 						<td>
-							<select class='selector' id=$joueur[0]>
+							<select class='selector' id='$joueur[0]'>
 								<option value='present'></option>
 								<option value='ABS'>Abscent</option>
 								<option value='BLE'>Blesser</option>
