@@ -22,10 +22,12 @@
 			if(isset($_POST['modifabs'])){
 				$dateActuel=$_POST['calendrier'];
 			}
+			$abs=fopen('abscents.json','w+');
+			fwrite($abs,json_encode($this->_model->GetAllAbs()));
+			fclose($abs);
 			?>
-
 			<form method="post">
-			<input type='date' id='calendrier' name='calendrier' min='2021-08-01' max='2022-07-31' value='<?php echo $dateActuel ;?>' onchange="<?php $abs=fopen('abscents.json','w+');fwrite($abs,json_encode($this->_model->GetAllAbs()));fclose($abs);?> dateP()">
+			<input type='date' id='calendrier' name='calendrier' min='2021-08-01' max='2022-07-31' value='<?php echo $dateActuel ;?>' onchange="dateP()">
        		<?php
 			echo "</br></br></br>";
 			echo "<table id='tablep'>";

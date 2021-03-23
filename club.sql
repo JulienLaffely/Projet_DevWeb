@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 22 mars 2021 à 18:44
+-- Généré le : mar. 23 mars 2021 à 22:35
 -- Version du serveur :  8.0.21
 -- Version de PHP : 7.3.21
 
@@ -32,7 +32,7 @@ USE `club`;
 DROP TABLE IF EXISTS `abscences`;
 CREATE TABLE IF NOT EXISTS `abscences` (
   `id` int NOT NULL,
-  `motif` enum('ABS','NL','SUS','BLE') COLLATE utf8_bin NOT NULL,
+  `motif` enum('ABS','NL','SUS','BLE') CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -43,10 +43,11 @@ CREATE TABLE IF NOT EXISTS `abscences` (
 INSERT INTO `abscences` (`id`, `motif`, `date`) VALUES
 (8, 'NL', '2022-02-27'),
 (1, 'ABS', '2021-08-08'),
-(7, 'NL', '2021-08-01'),
-(1, 'ABS', '2021-08-01'),
-(3, 'BLE', '2021-08-01'),
-(8, 'SUS', '2021-08-01');
+(9, 'ABS', '2021-08-22'),
+(1, 'NL', '2021-08-01'),
+(6, 'NL', '2021-08-08'),
+(11, 'SUS', '2021-08-01'),
+(5, 'BLE', '2021-08-01');
 
 -- --------------------------------------------------------
 
@@ -56,9 +57,9 @@ INSERT INTO `abscences` (`id`, `motif`, `date`) VALUES
 
 DROP TABLE IF EXISTS `authentification`;
 CREATE TABLE IF NOT EXISTS `authentification` (
-  `login` varchar(50) COLLATE utf8_bin NOT NULL,
-  `mdp` varchar(50) COLLATE utf8_bin NOT NULL,
-  `role` enum('Entraineur','Secrétaire','','') COLLATE utf8_bin NOT NULL
+  `login` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `mdp` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `role` enum('Entraineur','Secrétaire','','') CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
@@ -98,7 +99,13 @@ INSERT INTO `joueurs` (`id`, `nom`, `prenom`, `ddn`) VALUES
 (6, 'Emilou', 'Tintin', '1996-11-06'),
 (7, 'Ebile', 'Bowl', '2001-09-11'),
 (8, 'Sarkozy', 'Nicolas', '1983-10-21'),
-(9, 'Pompidou', 'Georges', '1989-06-17');
+(9, 'Pompidou', 'Georges', '1989-06-17'),
+(10, 'Genest', 'David', '1980-05-12'),
+(11, 'Richer', 'Jean-Michel', '1975-02-04'),
+(12, 'Zidane', 'Zinédine', '1972-06-23'),
+(13, 'Burns', 'Montgomery', '1950-07-05'),
+(14, 'Smith', 'Will', '1967-09-09'),
+(15, 'Stephan', 'Igor', '1975-05-20');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

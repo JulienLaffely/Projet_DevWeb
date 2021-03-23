@@ -41,14 +41,14 @@
 			echo "<form method='post'>
 					<fieldset id='Enregistrement'>
 					<legend>Enregistrement de nouveau joueur</legend>
-					<label>Nom</label>
-					<input type='text' name='NomNewJoueur'/>
-					<label style='margin-left: 150px'>Prenom</label>
-					<input type='text' name='PrenomNewJoueur'/>
-					<label style='margin-left: 140px'>Date de naissance</label>
-					<input type='date' min='1950-01-01' max='2002-01-01' name='DdnNewJoueur'/>
+					<label style='margin-left: 30px'>Nom</label>
+					<input type='text' name='NomNewJoueur' style='width:150px'/>
+					<label style='margin-left: 135px'>Prenom</label>
+					<input type='text' name='PrenomNewJoueur' style='width:150px'/>
+					<label style='margin-left: 65px'>Date de naissance</label>
+					<input type='date' min='1950-01-01' max='2002-01-01' name='DdnNewJoueur' style='width:150px'/>
 					</br></br>
-					<input type='submit' name='NewJoueur' id='BoutAjoutJoueur' value='Enregistrer un nouveau joueur' style='margin-left: 370px;height:50px;background-color:green'/>
+					<input type='submit' name='NewJoueur' id='BoutAjoutJoueur' value='Enregistrer un nouveau joueur' style='margin-left: 365px;height:50px;background-color:green;width:220px'/>
 					</fieldset>
 				</form>";
 		}
