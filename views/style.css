@@ -55,8 +55,23 @@ body{
     width : 13.33%;
 }
 
+#tablec {
+    margin-left : auto;
+    margin-right: auto;
+    width: 70%;
+}
 
-select {
+#tablec,#tdc {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#tdc{
+    text-align: center;
+    width: 10%;
+}
+
+.selectP {
     width:200px;
 }
 

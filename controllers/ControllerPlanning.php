@@ -41,7 +41,7 @@
 						<td id='tdp'>$joueur[1]</td>
 						<td id='tdp'>$joueur[2]</td>
 						<td id='tdp'>
-							<select class='selector' id='$joueur[0]' name='$joueur[0]'>
+							<select class='selectP' id='$joueur[0]' name='$joueur[0]'>
 								<option value='present'></option>
 								<option value='ABS'>Abscent</option>
 								<option value='BLE'>Blesser</option>
