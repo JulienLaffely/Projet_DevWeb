@@ -314,7 +314,7 @@
 								}
 							}
 
-						}else if(count($value)==1)
+						}else if(count($value)==2)
 							  {
 							  	if($value[1][1]==$value[0][1]){
 							  		echo "<script>alert('Attention ! Une equipe joue deux fois le $dateCourante ! Les 2 matchs sont donc pour l\'instant réatribué dans l\'ordre des equipes. Merci de réatribuez les equipes pour cette date.')</script>";
