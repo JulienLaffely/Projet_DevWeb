@@ -19,13 +19,13 @@ class modelPlanning extends Model
 
 	public function GetAbsJoueur($id,$date) {
 		$bdd=$this->getBdd();
-		$return = $bdd->query("SELECT a.date , a.motif FROM abscences a WHERE a.id='$id' AND a.date='$date'");
+		$return = $bdd->query("SELECT a.date , a.motif FROM absences a WHERE a.id='$id' AND a.date='$date'");
 		return $return;
 	}
 
 	public function GetAllAbs(){
 		$bdd=$this->getBdd();
-		$query=$bdd->query("SELECT a.id , a.date , a.motif FROM abscences a");
+		$query=$bdd->query("SELECT a.id , a.date , a.motif FROM absences a");
 		return $query->fetchAll(PDO::FETCH_ASSOC);
 	}
 
@@ -34,20 +34,20 @@ class modelPlanning extends Model
 		$indexid=(string)$index;
 		$bdd=$this->getBdd();
 		$datemodif=$_POST['calendrier'];
-		$query=$bdd->query("SELECT a.id , a.date , a.motif FROM abscences a WHERE a.date='$datemodif'");
+		$query=$bdd->query("SELECT a.id , a.date , a.motif FROM absences a WHERE a.date='$datemodif'");
 		while(isset($_POST[$indexid])){
-			$query=$bdd->query("SELECT a.id , a.date , a.motif FROM abscences a WHERE a.date='$datemodif' AND a.id=$index");
+			$query=$bdd->query("SELECT a.id , a.date , a.motif FROM absences a WHERE a.date='$datemodif' AND a.id=$index");
 			$query=$query->fetchAll(PDO::FETCH_ASSOC);
 			if(count($query)!=0){
 					if($query[0]['motif']!=$_POST[$indexid] && $_POST[$indexid]!='present'){
-						$bdd->query("UPDATE abscences SET motif='$_POST[$indexid]'WHERE a.date='$datemodif' AND a.id=$index");	
+						$bdd->query("UPDATE absences SET motif='$_POST[$indexid]'WHERE a.date='$datemodif' AND a.id=$index");	
 					}
 					else if ($_POST[$indexid]=='present'){
-						$bdd->query("DELETE FROM abscences a WHERE a.date='$datemodif' AND a.id=$index");
+						$bdd->query("DELETE FROM absences a WHERE a.date='$datemodif' AND a.id=$index");
 					}
 			}
 			else if($_POST[$indexid]!='present'){
-				$bdd->query("INSERT INTO abscences VALUES ($index,'$_POST[$indexid]','$datemodif')");
+				$bdd->query("INSERT INTO absences VALUES ($index,'$_POST[$indexid]','$datemodif')");
 			}
 			++$index ;
 			$indexid=(string)$index;

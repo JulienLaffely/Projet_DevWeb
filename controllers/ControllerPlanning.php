@@ -22,7 +22,7 @@
 			if(isset($_POST['modifabs'])){
 				$dateActuel=$_POST['calendrier'];
 			}
-			$abs=fopen('abscents.json','w+');
+			$abs=fopen('absents.json','w+');
 			fwrite($abs,json_encode($this->_model->GetAllAbs()));
 			fclose($abs);
 			?>
@@ -34,7 +34,7 @@
 			echo "<tr id='trp'>
 						<td id='tdp'><b>NOM</b></td>
 						<td id='tdp'><b>PRENOM</b></td>
-						<td id='tdp'><b>RAISON ABSCENCE</b></td>
+						<td id='tdp'><b>RAISON ABSENCE</b></td>
 				  </tr>";
 			foreach ($this->_model->Joueurs() as $joueur) {
 				echo "<tr  id='trp'>
@@ -43,7 +43,7 @@
 						<td id='tdp'>
 							<select class='selectP' id='$joueur[0]' name='$joueur[0]'>
 								<option value='present'></option>
-								<option value='ABS'>Abscent</option>
+								<option value='ABS'>Absent</option>
 								<option value='BLE'>Blesser</option>
 								<option value='NL'>Non-Licencié</option>
 								<option value='SUS'>Suspendu </option>

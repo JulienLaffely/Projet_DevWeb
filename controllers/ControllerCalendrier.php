@@ -238,9 +238,9 @@
 				if(date("l",strtotime($_POST['Date'.strval($indice)]))!="Sunday")
 				{
 					if($_POST['Date'.strval($indice)]==""){
-						echo "<script>alert('Le match qui oppose $EqMaj et $EqAMaj le $LaDateMaj ne pourra pas avoir lieu car il n\'est pas programmer. Le match est donc enregistrer mais sans date. Vous ne pourrez donc pas créer de convocation pour celui ci tant que la date n\'aura pas été modifier !')</script>";
+						echo "<script>alert('Le match qui oppose $EqMaj et $EqAMaj le $LaDateMaj ne pourra pas avoir lieu car il n\'est pas programmer. Le match est donc enregistré mais sans date. Vous ne pourrez donc pas créer de convocation pour celui-ci tant que la date n\'aura pas été modifiée !')</script>";
 					}
-					else echo "<script>alert('Le match qui oppose $EqMaj et $EqAMaj le $LaDateMaj ne pourra pas avoir lieu car ce n\'est pas un dimanche. Le match est donc enregistrer mais sans date. Vous ne pourrez donc pas créer de convocation pour celui ci tant que la date n\'aura pas été modifier !')</script>";
+					else echo "<script>alert('Le match qui oppose $EqMaj et $EqAMaj le $LaDateMaj ne pourra pas avoir lieu car ce n\'est pas un dimanche. Le match est donc enregistrer mais sans date. Vous ne pourrez donc pas créer de convocation pour celui ci tant que la date n\'aura pas été modifiée !')</script>";
 					$calendrier[$indice][3]="";
 				}
 				else $calendrier[$indice][3]=$LaDateMaj;
@@ -276,7 +276,7 @@
 			foreach ($calendrierGrouperParDate as $key => $value ) {
 				$dateCourante=$key;
 				if((count($value)>3)&&($key!="")){
-					echo "<script>alert('Trop de match programmé le $dateCourante ! Un maximum de 3 matchs (1 par équipe) par jour est accépté ! Veuillez reprogrammez les matchs concerné.')</script>";
+					echo "<script>alert('Trop de matchs programmés le $dateCourante ! Un maximum de 3 matchs (1 par équipe) par jour est accépté ! Veuillez reprogrammer les matchs concernés.')</script>";
 					foreach ($calendrier as &$ligne) {
 						if ($ligne[3]==$dateCourante) $ligne[3]="";
 					}
@@ -286,7 +286,7 @@
 						if(count($value)==3)
 						{
 							if($value[1][1]==$value[0][1] || $value[1][1]==$value[2][1] || $value[2][1]==$value[0][1]){
-								echo "<script>alert('Attention ! Une equipe joue au moins deux fois le $dateCourante ! Les 3 matchs sont donc pour l\'instant réatribué dans l\'ordre des equipes. Merci de réatribuez les equipes pour cette date.')</script>";
+								echo "<script>alert('Attention ! Une equipe joue au moins deux fois le $dateCourante ! Les 3 matchs sont donc pour l\'instant réattribué dans l\'ordre des equipes. Merci de réatribuez les equipes pour cette date.')</script>";
 								$compt=0;
 								foreach ($calendrier as &$ligne) {
 									if ($ligne[3]==$dateCourante && $compt==0){ $ligne[1]="SENIORS_1";++$compt;}
@@ -296,7 +296,7 @@
 
 							}
 							else if($value[1][2]==$value[0][2] || $value[1][2]==$value[2][2] || $value[2][2]==$value[0][2]){
-								echo "<script>alert('Attention ! Plusieurs equipes jouent contre le même adversaire le $dateCourante ! Les adversaires de chaque equipe sont pour l\'instant modifié pour qu\'ils soient différent à cette date. Merci de réatribuez des adversaires à chque équipe pour cette date.')</script>";
+								echo "<script>alert('Attention ! Plusieurs équipes jouent contre le même adversaire le $dateCourante ! Les adversaires de chaque équipe sont pour l\'instant modifiés pour qu\'ils soient différent à cette date. Merci de réattribuer des adversaires à chaque équipe pour cette date.')</script>";
 								$compt=0;
 								foreach ($calendrier as &$ligne) {
 									if ($ligne[3]==$dateCourante && $compt==0){ $ligne[2]="FC Argentre";++$compt;}
@@ -305,7 +305,7 @@
 								}
 							}
 							else if((($value[1][5]==$value[0][5])&&($value[1][6]==$value[0][6]))||(($value[1][5]==$value[0][5])&&($value[1][6]==$value[0][6]))||(($value[1][5]==$value[0][5])&&($value[1][6]==$value[0][6]))){
-								echo "<script>alert('Attention ! Au moins deux équipes jouent sur le même terrain le $dateCourante ! Réatribution automatique de terrain différent pour les matchs de cette date.')</script>";
+								echo "<script>alert('Attention ! Au moins deux équipes jouent sur le même terrain le $dateCourante ! Réattribution automatique de terrains différents pour les matchs de cette date.')</script>";
 								$compt=0;
 								foreach ($calendrier as &$ligne) {
 									if ($ligne[3]==$dateCourante && $compt==0){ $ligne[5]="Stade Chirac";$ligne[6]="Argentre";++$compt;}
@@ -317,7 +317,7 @@
 						}else if(count($value)==2)
 							  {
 							  	if($value[1][1]==$value[0][1]){
-							  		echo "<script>alert('Attention ! Une equipe joue deux fois le $dateCourante ! Les 2 matchs sont donc pour l\'instant réatribué dans l\'ordre des equipes. Merci de réatribuez les equipes pour cette date.')</script>";
+							  		echo "<script>alert('Attention ! Une équipe joue deux fois le $dateCourante ! Les 2 matchs sont donc pour l\'instant réattribué dans l\'ordre des équipes. Merci de réattribuer les équipes pour cette date.')</script>";
 							  		$compt=0;
 									foreach ($calendrier as &$ligne) {
 										if ($ligne[3]==$dateCourante && $compt==0){ $ligne[1]="SENIORS_1";++$compt;}
@@ -325,7 +325,7 @@
 									}
 							  	}
 							  	else if($value[1][2]==$value[0][2]){
-							  		echo "<script>alert('Attention ! Les deux equipes jouent contre le même adversaire le $dateCourante ! Les adversaires de chaque equipe sont pour l\'instant modifié pour qu\'ils soient différent à cette date. Merci de réatribuez des adversaires à chque équipe pour cette date.')</script>";
+							  		echo "<script>alert('Attention ! Les deux équipes jouent contre le même adversaire le $dateCourante ! Les adversaires de chaque équipe sont pour l\'instant modifiés pour qu\'ils soient différents à cette date. Merci de réattribuer des adversaires à chaque équipe pour cette date.')</script>";
 							  		$compt=0;
 									foreach ($calendrier as &$ligne) {
 										if ($ligne[3]==$dateCourante && $compt==0){ $ligne[2]="FC Argentre";++$compt;}
@@ -333,7 +333,7 @@
 									}
 							  	}
 							  	else if(($value[1][5]==$value[0][5])&&($value[1][6]==$value[0][6])){
-							  		echo "<script>alert('Attention ! Les deux équipes jouent sur le même terrain le $dateCourante ! Réatribution automatique de terrain différent pour les matchs de cette date.')</script>";
+							  		echo "<script>alert('Attention ! Les deux équipes jouent sur le même terrain le $dateCourante ! Réattribution automatique de terrains différents pour les matchs de cette date.')</script>";
 							  		$compt=0;
 									foreach ($calendrier as &$ligne) {
 										if ($ligne[3]==$dateCourante && $compt==0){ $ligne[5]="Stade Chirac";$ligne[6]="Argentre";++$compt;}
