@@ -6,7 +6,7 @@
 		public function __construct()
 		{
 					if(isset($_POST['Delete'])) $this->deleteCSV();
-					if(isset($_POST['MajCSV'])) $this->MajCSV();
+					if(isset($_POST['MajCSV'])||isset($_POST['AjoutMatch'])) $this->MajCSV();
 					$this->_view = new View('Calendrier');
 					$this->_view->generate();
 					$this->AfficheCalendrier();
@@ -14,8 +14,31 @@
 
 		public function AfficheCalendrier()
 		{
+			echo "<p style='margin-left:auto;margin-right:auto;width:85%'>* Au maximum, 159 matchs peuvent avoir lieu au cour de la saison. Si ce nombre est dépasser, vous allez devoir supprimer des rencontres pour pouvoir programmer tous les matchs.</p>";
 			echo "<form method='post'>";
 			$i=0;
+			$equipesadverses=[];
+			$terrains=[];
+			$sites = [];
+			if(($liste=fopen("Liste_equipes_terrain_site.csv","r"))!==FALSE)
+			{
+				while(($li=fgetcsv($liste,1000,";"))!==FALSE)
+				{
+					if($li[0]!="Equipes"&&$li[0]!="")
+					{
+						$equipesadverses[]=$li[0];
+					}
+					if($li[2]!="Terrain"&&$li[2]!="")
+					{
+						$terrains[]=$li[2];
+					}
+					if($li[1]!="Site"&&$li[1]!="")
+					{
+						$sites[]=$li[1];
+					}
+				}
+				fclose($liste);
+			}
 			if(($csv=fopen("Matchs.csv","r"))!==FALSE)
 			{
 				while(($ligne=fgetcsv($csv,1000,";"))!==FALSE)
@@ -72,16 +95,8 @@
 								</td>
 								<td id='tdc'>
 									<select name='$EqA' style='opacity:0.8;'>";
-									if(($equipA=fopen("Liste_equipes_terrain_site.csv","r"))!==FALSE)
-									{
-										while(($eq=fgetcsv($equipA,1000,";"))!==FALSE)
-										{
-											if($eq[0]!="Equipes")
-											{
-												echo "<option value='$eq[0]'>$eq[0]</option>";
-											}
-										}
-										fclose($equipA);
+									foreach ($equipesadverses as $ligneEquipeAdverse) {
+										echo "<option value='$ligneEquipeAdverse'>$ligneEquipeAdverse</option>";
 									}
 									echo "
 									</select>
@@ -94,32 +109,16 @@
 								</td>
 								<td id='tdc'>
 									<select name ='$Terrain' style='opacity:0.8;'>";
-									if(($terrain=fopen("Liste_equipes_terrain_site.csv","r"))!==FALSE)
-									{
-										while(($ter=fgetcsv($terrain,1000,";"))!==FALSE)
-										{
-											if($ter[2]!="Terrain"&&$ter[2]!="")
-											{
-												echo "<option value='$ter[2]'>$ter[2]</option>";
-											}
-										}
-										fclose($terrain);
+									foreach ($terrains as $ligneTerrain) {
+										echo "<option value='$ligneTerrain'>$ligneTerrain</option>";
 									}
 									echo "
 									</select>
 								</td>
 								<td id='tdc'>
 									<select name ='$Site' style='opacity:0.8;'>";
-									if(($site=fopen("Liste_equipes_terrain_site.csv","r"))!==FALSE)
-									{
-										while(($si=fgetcsv($site,1000,";"))!==FALSE)
-										{
-											if($si[1]!="Site")
-											{
-												echo "<option value='$si[1]'>$si[1]</option>";
-											}
-										}
-										fclose($site);
+									foreach ($sites as $ligneSite) {
+										echo "<option value='$ligneSite'>$ligneSite</option>";
 									}
 									echo "
 									</select>
@@ -137,6 +136,46 @@
 				echo "</table></br></br>";
 				echo "<center><input type='submit' value='Modifier le calendrier' name='MajCSV' style='height:70px;width:150px;background-color:green;' /></center></br>";
 				fclose($csv);
+				echo "<fieldset id='ajoutMatch'>
+						<legend>Ajout d'une rencontre</legend>
+						<select  name ='ajoutCompet' style='opacity:0.8;height:30px;width:11%;'>
+										<option value='' selected='selected'>-----</option>
+										<option value='Coupe Departementale'>Coupe Départementale</option>
+										<option value='Coupe Intercommunale'>Coupe Intercommunale</option>
+										<option value='Championnat Departementale'>Championnat Départementale</option>
+										<option value='Amical'>Amical</option>
+						</select>
+						<select name='ajoutEq' style='opacity:0.8;height:30px;width:11%;margin-left:10px;'>
+										<option value='' selected='selected'>-----</option>
+										<option value='SENIORS_1'>SENIORS_1</option> 
+										<option value='SENIORS_2'>SENIORS_2</option> 
+										<option value='SENIORS_3'>SENIORS_3</option> 
+						</select>
+						<select name='ajoutEqA' style='opacity:0.8;height:30px;width:11%;margin-left:10px;'>";
+									echo "<option value='' selected='selected'>-----</option>";
+									foreach ($equipesadverses as $ligneEquipeAdverse) {
+										echo "<option value='$ligneEquipeAdverse'>$ligneEquipeAdverse</option>";
+									}
+						echo "
+						</select>
+						<input type='date'  min='2021-08-01' max='2022-07-31' name='ajoutDate' style='height:20px;width:11%;margin-left:10px;'/>
+						<input type='time' min='08:00' max='20:00' name='ajoutHeure' style='height:20px;width:11%;margin-left:10px;'/>
+						<select name ='ajoutTerrain' style='opacity:0.8;height:30px;'>";
+									echo "<option value='' selected='selected'>-----</option>";
+									foreach ($terrains as $ligneTerrain) {
+										echo "<option value='$ligneTerrain'>$ligneTerrain</option>";
+									}
+						echo "
+						</select>
+						<select name ='ajoutSite' style='opacity:0.8;height:30px;width:11%;margin-left:10px;'>";
+									echo "<option value='' selected='selected'>-----</option>";
+									foreach ($sites as $ligneSite) {
+										echo "<option value='$ligneSite'>$ligneSite</option>";
+									}
+						echo "
+						</select>
+						<input type='submit' name='AjoutMatch' value='Ajouter la rencontre' style='height:30px;width:11%;margin-left:10px;'/>
+					 </fieldset></br></br>";
 			}
 			echo "<input type='hidden' name='nbMatch' value=$i /> </form>"
 				 ;
@@ -211,6 +250,28 @@
 
 				$indice++;
 			}
+
+			if(isset($_POST['AjoutMatch'])){
+				if($_POST['ajoutCompet']=="" ||$_POST['ajoutEq']=="" ||$_POST['ajoutEqA']=="" ||$_POST['ajoutDate']=="" ||$_POST['ajoutHeure']=="" ||$_POST['ajoutTerrain']=="" ||$_POST['ajoutSite']=="" )
+				{
+					echo "<script>alert('Merci de remplir tous les champs ! Aucune rencontre ajouter.')</script>";
+				}
+				else {
+					if(date("l",strtotime($_POST['ajoutDate']))=="Sunday"){
+						$calendrier[$_POST['nbMatch']][0]=$_POST['ajoutCompet'];
+						$calendrier[$_POST['nbMatch']][1]=$_POST['ajoutEq'];
+						$calendrier[$_POST['nbMatch']][2]=$_POST['ajoutEqA'];
+						$calendrier[$_POST['nbMatch']][3]=$_POST['ajoutDate'];
+						$calendrier[$_POST['nbMatch']][4]=$_POST['ajoutHeure'];
+						$calendrier[$_POST['nbMatch']][5]=$_POST['ajoutTerrain'];
+						$calendrier[$_POST['nbMatch']][6]=$_POST['ajoutSite'];	
+					}
+					else {
+						echo "<script>alert('Date incorrect ! Merci de choisir un dimanche. Rencontre non ajouter.')</script>";
+					}
+				}
+			}
+
 			$calendrierGrouperParDate= $this->group_by(3,$calendrier);
 			foreach ($calendrierGrouperParDate as $key => $value ) {
 				$dateCourante=$key;

@@ -1,3 +1,4 @@
+<?php $this->_t = 'Convocations'; ?>
 <center>
 <form id="bouttons4" method="post">
 <input id="test" type="submit" name="onglet" value="Calendrier" />
