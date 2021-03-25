@@ -1,160 +1,160 @@
-COMPETITION;EQUIPE;EQUIPE ADVERSE;DATE;HEURE;TERRAIN;SITE
-Coupe Departementale;SENIORS_1;FC Argentre;01/08/2021;17:00;Stade Chirac;Argentre
-Coupe Intercommunale;SENIORS_2;FC Bonchamp;01/08/2021;17:00;Stade Mandela;Bonchamp
-Championnat Departementale;SENIORS_3;FC Brece;01/08/2021;17:00;Stade du chat;Brece
-Amical;SENIORS_1;FC Change;08/08/2021;17:00;Stade du chien;Change
-Coupe Departementale;SENIORS_2;FC Chateau-Gontier;08/08/2021;17:00;Stade du grand ourson;Chateau-Gontier
-Coupe Intercommunale;SENIORS_3;FC Chatillon-sur-Colmont;08/08/2021;17:00;Stade du petit moineau;Chatillon-sur-Colmont
-Championnat Departementale;SENIORS_1;FC Commer;15/08/2021;17:00;Stade Grenon;Commer
-Amical;SENIORS_2;FC Contest;15/08/2021;17:00;Stade Hunault;Contest
-Coupe Departementale;SENIORS_3;FC Craon;15/08/2021;17:00;Stade Gandhi;Craon
-Coupe Intercommunale;SENIORS_1;FC Ernee;22/08/2021;17:00;Stade Laffely;Ernee
-Championnat Departementale;SENIORS_2;FC Evron;22/08/2021;17:00;Stade Lesaint;Evron
-Amical;SENIORS_3;FC Gorron;22/08/2021;17:00;Stade Municipale;Gorron
-Coupe Departementale;SENIORS_1;FC Grazay;29/08/2021;17:00;Stade Municipale;Grazay
-Coupe Intercommunale;SENIORS_2;FC Javron-les-chapelles;29/08/2021;17:00;Stade Lesaint;Javron-les-chapelles
-Championnat Departementale;SENIORS_3;FC Juvigne;29/08/2021;17:00;Stade Laffely;Juvigne
-Amical;SENIORS_1;FC La Gravelle;05/09/2021;17:00;Stade Gandhi;La Gravelle
-Coupe Departementale;SENIORS_2;FC Laval;05/09/2021;17:00;Stade Hunault;Laval
-Coupe Intercommunale;SENIORS_3;FC Le Horps;05/09/2021;17:00;Stade Grenon;Le Horps
-Championnat Departementale;SENIORS_1;FC Le Ribay;12/09/2021;17:00;Stade du petit moineau;Le Ribay
-Amical;SENIORS_2;FC L Huisserie;12/09/2021;17:00;Stade du grand ourson;L Huisserie
-Coupe Departementale;SENIORS_3;FC Louverne;12/09/2021;17:00;Stade du chien;Louverne
-Coupe Intercommunale;SENIORS_1;FC Louvigne;19/09/2021;17:00;Stade du chat;Louvigne
-Championnat Departementale;SENIORS_2;FC Madre;19/09/2021;17:00;Stade Mandela;Madre
-Amical;SENIORS_3;FC Marcille;19/09/2021;17:00;Stade Chirac;Marcille
-Coupe Departementale;SENIORS_1;FC Martigne;26/09/2021;17:00;Stade Grenon;Martigne
-Coupe Intercommunale;SENIORS_2;FC Mayenne;26/09/2021;17:00;Stade Hunault;Mayenne
-Championnat Departementale;SENIORS_3;FC Montsurs;26/09/2021;17:00;Stade Gandhi;Montsurs
-Amical;SENIORS_1;FC Moulay;03/10/2021;17:00;Stade Laffely;Moulay
-Coupe Departementale;SENIORS_2;FC Pre-en-Pail;03/10/2021;17:00;Stade Lesaint;Pre-en-Pail
-Coupe Intercommunale;SENIORS_3;FC Renaze;03/10/2021;17:00;Stade Municipale;Renaze
-Championnat Departementale;SENIORS_1;FC Sace;10/10/2021;17:00;Stade Municipale;Sace
-Amical;SENIORS_2;FC Saint-Baudelle;10/10/2021;17:00;Stade Lesaint;Saint-Baudelle
-Coupe Departementale;SENIORS_3;FC Saint-Berthevin;10/10/2021;17:00;Stade Laffely;Saint-Berthevin
-Coupe Intercommunale;SENIORS_1;FC Saint-Loup-du-Gast;17/10/2021;17:00;Stade Gandhi;Saint-Loup-du-Gast
-Championnat Departementale;SENIORS_2;FC Vaiges;17/10/2021;17:00;Stade Hunault;Vaiges
-Amical;SENIORS_3;FC Villaines-la-Juhel;17/10/2021;17:00;Stade Grenon;Villaines-la-Juhel
-Coupe Departementale;SENIORS_1;FC Villaines-la-Juhel;24/10/2021;17:00;Stade du petit moineau;Villaines-la-Juhel
-Coupe Intercommunale;SENIORS_2;FC Vaiges;24/10/2021;17:00;Stade Gandhi;Vaiges
-Championnat Departementale;SENIORS_3;FC Saint-Loup-du-Gast;24/10/2021;17:00;Stade Hunault;Saint-Loup-du-Gast
-Amical;SENIORS_1;FC Saint-Berthevin;31/10/2021;17:00;Stade Grenon;Saint-Berthevin
-Coupe Departementale;SENIORS_2;FC Saint-Baudelle;31/10/2021;17:00;Stade du petit moineau;Saint-Baudelle
-Coupe Intercommunale;SENIORS_3;FC Sace;31/10/2021;17:00;Stade du grand ourson;Sace
-Championnat Departementale;SENIORS_1;FC Renaze;07/11/2021;17:00;Stade du chien;Renaze
-Amical;SENIORS_2;FC Pre-en-Pail;07/11/2021;17:00;Stade du chat;Pre-en-Pail
-Coupe Departementale;SENIORS_3;FC Moulay;07/11/2021;17:00;Stade Mandela;Moulay
-Coupe Intercommunale;SENIORS_1;FC Montsurs;14/11/2021;17:00;Stade Chirac;Montsurs
-Championnat Departementale;SENIORS_2;FC Mayenne;14/11/2021;17:00;Stade Grenon;Mayenne
-Amical;SENIORS_3;FC Martigne;14/11/2021;17:00;Stade Hunault;Martigne
-Coupe Departementale;SENIORS_1;FC Marcille;21/11/2021;17:00;Stade Gandhi;Marcille
-Coupe Intercommunale;SENIORS_2;FC Madre;21/11/2021;17:00;Stade Laffely;Madre
-Championnat Departementale;SENIORS_3;FC Louvigne;21/11/2021;17:00;Stade Lesaint;Louvigne
-Amical;SENIORS_1;FC Louverne;28/11/2021;17:00;Stade Municipale;Louverne
-Coupe Departementale;SENIORS_2;FC L Huisserie;28/11/2021;17:00;Stade Gandhi;L Huisserie
-Coupe Intercommunale;SENIORS_3;FC Le Ribay;28/11/2021;17:00;Stade Hunault;Le Ribay
-Championnat Departementale;SENIORS_1;FC Le Horps;05/12/2021;17:00;Stade Grenon;Le Horps
-Amical;SENIORS_2;FC Laval;05/12/2021;17:00;Stade du petit moineau;Laval
-Coupe Departementale;SENIORS_3;FC La Gravelle;05/12/2021;17:00;Stade Gandhi;La Gravelle
-Coupe Intercommunale;SENIORS_1;FC Juvigne;12/12/2021;17:00;Stade Hunault;Juvigne
-Championnat Departementale;SENIORS_2;FC Javron-les-chapelles;12/12/2021;17:00;Stade Grenon;Javron-les-chapelles
-Amical;SENIORS_3;FC Grazay;12/12/2021;17:00;Stade du petit moineau;Grazay
-Coupe Departementale;SENIORS_1;FC Gorron;19/12/2021;17:00;Stade du grand ourson;Gorron
-Coupe Intercommunale;SENIORS_2;FC Evron;19/12/2021;17:00;Stade du chien;Evron
-Championnat Departementale;SENIORS_3;FC Ernee;19/12/2021;17:00;Stade du chat;Ernee
-Amical;SENIORS_1;FC Craon;26/12/2021;17:00;Stade Mandela;Craon
-Coupe Departementale;SENIORS_2;FC Contest;26/12/2021;17:00;Stade Chirac;Contest
-Coupe Intercommunale;SENIORS_3;FC Commer;26/12/2021;17:00;Stade Grenon;Commer
-Championnat Departementale;SENIORS_1;FC Chatillon-sur-Colmont;02/01/2022;17:00;Stade Hunault;Chatillon-sur-Colmont
-Amical;SENIORS_2;FC Chateau-Gontier;02/01/2022;17:00;Stade Gandhi;Chateau-Gontier
-Coupe Departementale;SENIORS_3;FC Change;02/01/2022;17:00;Stade Laffely;Change
-Coupe Intercommunale;SENIORS_1;FC Brece;09/01/2022;17:00;Stade Lesaint;Brece
-Championnat Departementale;SENIORS_2;FC Bonchamp;09/01/2022;17:00;Stade Municipale;Bonchamp
-Amical;SENIORS_3;FC Argentre;09/01/2022;17:00;Stade Gandhi;Argentre
-Coupe Departementale;SENIORS_1;FC Mayenne;16/01/2022;17:00;Stade Hunault;Mayenne
-Coupe Intercommunale;SENIORS_2;FC Martigne;16/01/2022;17:00;Stade Grenon;Martigne
-Championnat Departementale;SENIORS_3;FC Marcille;16/01/2022;17:00;Stade du petit moineau;Marcille
-Amical;SENIORS_1;FC Madre;23/01/2022;17:00;Stade Gandhi;Madre
-Coupe Departementale;SENIORS_2;FC Louvigne;23/01/2022;17:00;Stade Hunault;Louvigne
-Coupe Intercommunale;SENIORS_3;FC Louverne;23/01/2022;17:00;Stade Grenon;Louverne
-Championnat Departementale;SENIORS_1;FC L Huisserie;30/01/2022;17:00;Stade du petit moineau;L Huisserie
-Amical;SENIORS_2;FC Le Ribay;30/01/2022;17:00;Stade du grand ourson;Le Ribay
-Coupe Departementale;SENIORS_3;FC Le Horps;30/01/2022;17:00;Stade du chien;Le Horps
-Coupe Intercommunale;SENIORS_1;FC Laval;06/02/2022;17:00;Stade du chat;Laval
-Championnat Departementale;SENIORS_2;FC La Gravelle;06/02/2022;17:00;Stade Mandela;La Gravelle
-Amical;SENIORS_3;FC Juvigne;06/02/2022;17:00;Stade Chirac;Juvigne
-Coupe Departementale;SENIORS_1;FC Javron-les-chapelles;13/02/2022;17:00;Stade Grenon;Javron-les-chapelles
-Coupe Intercommunale;SENIORS_2;FC Grazay;13/02/2022;17:00;Stade Hunault;Grazay
-Championnat Departementale;SENIORS_3;FC Gorron;13/02/2022;17:00;Stade Gandhi;Gorron
-Amical;SENIORS_1;FC Evron;20/02/2022;17:00;Stade Laffely;Evron
-Coupe Departementale;SENIORS_2;FC Ernee;20/02/2022;17:00;Stade Lesaint;Ernee
-Coupe Intercommunale;SENIORS_3;FC Craon;20/02/2022;17:00;Stade Municipale;Craon
-Championnat Departementale;SENIORS_1;FC Contest;27/02/2022;17:00;Stade Gandhi;Contest
-Amical;SENIORS_2;FC Commer;27/02/2022;17:00;Stade Hunault;Commer
-Coupe Departementale;SENIORS_3;FC Vaiges;27/02/2022;17:00;Stade Grenon;Vaiges
-Coupe Intercommunale;SENIORS_1;FC Villaines-la-Juhel;06/03/2022;17:00;Stade du petit moineau;Villaines-la-Juhel
-Championnat Departementale;SENIORS_2;FC Craon;06/03/2022;17:00;Stade Gandhi;Craon
-Amical;SENIORS_3;FC Vaiges;06/03/2022;17:00;Stade Hunault;Vaiges
-Coupe Departementale;SENIORS_1;FC Saint-Loup-du-Gast;13/03/2022;17:00;Stade Grenon;Saint-Loup-du-Gast
-Coupe Intercommunale;SENIORS_2;FC Saint-Berthevin;13/03/2022;17:00;Stade du petit moineau;Saint-Berthevin
-Championnat Departementale;SENIORS_3;FC Saint-Baudelle;13/03/2022;17:00;Stade du grand ourson;Saint-Baudelle
-Amical;SENIORS_1;FC Sace;20/03/2022;17:00;Stade du chien;Sace
-Coupe Departementale;SENIORS_2;FC Renaze;20/03/2022;17:00;Stade du chat;Renaze
-Coupe Intercommunale;SENIORS_3;FC Pre-en-Pail;20/03/2022;17:00;Stade Mandela;Pre-en-Pail
-Championnat Departementale;SENIORS_1;FC Moulay;27/03/2022;17:00;Stade Chirac;Moulay
-Amical;SENIORS_2;FC Montsurs;27/03/2022;17:00;Stade Grenon;Montsurs
-Coupe Departementale;SENIORS_3;FC Mayenne;27/03/2022;17:00;Stade Hunault;Mayenne
-Coupe Intercommunale;SENIORS_1;FC Martigne;03/04/2022;17:00;Stade Gandhi;Martigne
-Championnat Departementale;SENIORS_2;FC Marcille;03/04/2022;17:00;Stade Laffely;Marcille
-Amical;SENIORS_3;FC Madre;03/04/2022;17:00;Stade Lesaint;Madre
-Coupe Departementale;SENIORS_1;FC Louvigne;10/04/2022;17:00;Stade Municipale;Louvigne
-Coupe Intercommunale;SENIORS_2;FC Louverne;10/04/2022;17:00;Stade Gandhi;Louverne
-Championnat Departementale;SENIORS_3;FC L Huisserie;10/04/2022;17:00;Stade Hunault;L Huisserie
-Amical;SENIORS_1;FC Le Ribay;17/04/2022;17:00;Stade Grenon;Le Ribay
-Coupe Departementale;SENIORS_2;FC Le Horps;17/04/2022;17:00;Stade du petit moineau;Le Horps
-Coupe Intercommunale;SENIORS_3;FC Laval;17/04/2022;17:00;Stade Gandhi;Laval
-Championnat Departementale;SENIORS_1;FC La Gravelle;24/04/2022;17:00;Stade Hunault;La Gravelle
-Amical;SENIORS_2;FC Juvigne;24/04/2022;17:00;Stade Grenon;Juvigne
-Coupe Departementale;SENIORS_3;FC Javron-les-chapelles;24/04/2022;17:00;Stade du petit moineau;Javron-les-chapelles
-Coupe Intercommunale;SENIORS_1;FC Chateau-Gontier;01/05/2022;17:00;Stade du grand ourson;Chateau-Gontier
-Championnat Departementale;SENIORS_2;FC Chatillon-sur-Colmont;01/05/2022;17:00;Stade du chien;Chatillon-sur-Colmont
-Amical;SENIORS_3;FC Commer;01/05/2022;17:00;Stade du chat;Commer
-Coupe Departementale;SENIORS_1;FC Contest;08/05/2022;17:00;Stade Mandela;Contest
-Coupe Intercommunale;SENIORS_2;FC Craon;08/05/2022;17:00;Stade Chirac;Craon
-Championnat Departementale;SENIORS_3;FC Ernee;08/05/2022;17:00;Stade Grenon;Ernee
-Amical;SENIORS_1;FC Evron;15/05/2022;17:00;Stade Hunault;Evron
-Coupe Departementale;SENIORS_2;FC Gorron;15/05/2022;17:00;Stade Gandhi;Gorron
-Coupe Intercommunale;SENIORS_3;FC Grazay;15/05/2022;17:00;Stade Laffely;Grazay
-Championnat Departementale;SENIORS_1;FC Javron-les-chapelles;22/05/2022;17:00;Stade Lesaint;Javron-les-chapelles
-Amical;SENIORS_2;FC Juvigne;22/05/2022;17:00;Stade Municipale;Juvigne
-Coupe Departementale;SENIORS_3;FC La Gravelle;22/05/2022;17:00;Stade Gandhi;La Gravelle
-Coupe Intercommunale;SENIORS_1;FC Laval;29/05/2022;17:00;Stade Hunault;Laval
-Championnat Departementale;SENIORS_2;FC Le Horps;29/05/2022;17:00;Stade Grenon;Le Horps
-Amical;SENIORS_3;FC Le Ribay;29/05/2022;17:00;Stade du petit moineau;Le Ribay
-Coupe Departementale;SENIORS_1;FC L Huisserie;05/06/2022;17:00;Stade Gandhi;L Huisserie
-Coupe Intercommunale;SENIORS_2;FC Louverne;05/06/2022;17:00;Stade Hunault;Louverne
-Championnat Departementale;SENIORS_3;FC Louvigne;05/06/2022;17:00;Stade Grenon;Louvigne
-Amical;SENIORS_1;FC Madre;12/06/2022;17:00;Stade du petit moineau;Madre
-Coupe Departementale;SENIORS_2;FC Marcille;12/06/2022;17:00;Stade du grand ourson;Marcille
-Coupe Intercommunale;SENIORS_3;FC Martigne;12/06/2022;17:00;Stade du chien;Martigne
-Championnat Departementale;SENIORS_1;FC Mayenne;19/06/2022;17:00;Stade du chat;Mayenne
-Amical;SENIORS_2;FC Montsurs;19/06/2022;17:00;Stade Mandela;Montsurs
-Coupe Departementale;SENIORS_3;FC Villaines-la-Juhel;19/06/2022;17:00;Stade Chirac;Villaines-la-Juhel
-Coupe Intercommunale;SENIORS_1;FC Villaines-la-Juhel;26/06/2022;17:00;Stade Grenon;Villaines-la-Juhel
-Championnat Departementale;SENIORS_2;FC Vaiges;26/06/2022;17:00;Stade Hunault;Vaiges
-Amical;SENIORS_3;FC Mayenne;26/06/2022;17:00;Stade Gandhi;Mayenne
-Coupe Departementale;SENIORS_1;FC Saint-Loup-du-Gast;03/07/2022;17:00;Stade Laffely;Saint-Loup-du-Gast
-Coupe Intercommunale;SENIORS_2;FC Saint-Berthevin;03/07/2022;17:00;Stade Lesaint;Saint-Berthevin
-Championnat Departementale;SENIORS_3;FC Saint-Baudelle;03/07/2022;17:00;Stade Municipale;Saint-Baudelle
-Amical;SENIORS_1;FC Sace;10/07/2022;17:00;Stade Gandhi;Sace
-Coupe Departementale;SENIORS_2;FC Renaze;10/07/2022;17:00;Stade Hunault;Renaze
-Coupe Intercommunale;SENIORS_3;FC Pre-en-Pail;10/07/2022;17:00;Stade Grenon;Pre-en-Pail
-Championnat Departementale;SENIORS_1;FC Moulay;17/07/2022;17:00;Stade du petit moineau;Moulay
-Amical;SENIORS_2;FC Montsurs;17/07/2022;17:00;Stade Gandhi;Montsurs
-Coupe Departementale;SENIORS_3;FC Mayenne;17/07/2022;17:00;Stade Hunault;Mayenne
-Coupe Intercommunale;SENIORS_1;FC Martigne;24/07/2022;17:00;Stade Grenon;Martigne
-Championnat Departementale;SENIORS_2;FC Marcille;24/07/2022;17:00;Stade du petit moineau;Marcille
-Amical;SENIORS_3;FC Madre;24/07/2022;17:00;Stade du grand ourson;Madre
-Coupe Departementale;SENIORS_1;FC Louvigne;31/07/2022;17:00;Stade du chien;Louvigne
-Coupe Intercommunale;SENIORS_2;FC Louverne;31/07/2022;17:00;Stade du chat;Louverne
-Championnat Departementale;SENIORS_3;FC L Huisserie;31/07/2022;17:00;Stade Mandela;L Huisserie
+COMPETITION;EQUIPE;"EQUIPE ADVERSE";DATE;HEURE;TERRAIN;SITE
+"Coupe Departementale";SENIORS_1;"FC Argentre";2021/08/01;17:00;"Stade Chirac";Argentre
+"Coupe Intercommunale";SENIORS_2;"FC Bonchamp";2021/08/01;17:00;"Stade Mandela";Bonchamp
+"Championnat Departementale";SENIORS_3;"FC Brece";2021/08/01;17:00;"Stade du chat";Brece
+Amical;SENIORS_1;"FC Change";2021/08/08;17:00;"Stade du chien";Change
+"Coupe Departementale";SENIORS_2;"FC Chateau-Gontier";2021/08/08;17:00;"Stade du grand ourson";Chateau-Gontier
+"Coupe Intercommunale";SENIORS_3;"FC Chatillon-sur-Colmont";2021/08/08;17:00;"Stade du petit moineau";Chatillon-sur-Colmont
+"Championnat Departementale";SENIORS_1;"FC Commer";2021/08/15;17:00;"Stade Grenon";Commer
+Amical;SENIORS_2;"FC Contest";2021/08/15;17:00;"Stade Hunault";Contest
+"Coupe Departementale";SENIORS_3;"FC Craon";2021/08/15;17:00;"Stade Gandhi";Craon
+"Coupe Intercommunale";SENIORS_1;"FC Ernee";2021/08/22;17:00;"Stade Laffely";Ernee
+"Championnat Departementale";SENIORS_2;"FC Evron";2021/08/22;17:00;"Stade Lesaint";Evron
+Amical;SENIORS_3;"FC Gorron";2021/08/22;17:00;"Stade Municipale";Gorron
+"Coupe Departementale";SENIORS_1;"FC Grazay";2021/08/29;17:00;"Stade Municipale";Grazay
+"Coupe Intercommunale";SENIORS_2;"FC Javron-les-chapelles";2021/08/29;17:00;"Stade Lesaint";Javron-les-chapelles
+"Championnat Departementale";SENIORS_3;"FC Juvigne";2021/08/29;17:00;"Stade Laffely";Juvigne
+Amical;SENIORS_1;"FC La Gravelle";2021/09/05;17:00;"Stade Gandhi";"La Gravelle"
+"Coupe Departementale";SENIORS_2;"FC Laval";2021/09/05;17:00;"Stade Hunault";Laval
+"Coupe Intercommunale";SENIORS_3;"FC Le Horps";2021/09/05;17:00;"Stade Grenon";"Le Horps"
+"Coupe Departementale";SENIORS_3;"FC Louverne";2021/09/12;17:00;"Stade du chien";Louverne
+Amical;SENIORS_2;"FC L Huisserie";2021/09/12;17:00;"Stade du grand ourson";"L Huisserie"
+"Championnat Departementale";SENIORS_1;"FC Le Ribay";2021/09/12;17:00;"Stade du petit moineau";"Le Ribay"
+Amical;SENIORS_3;"FC Marcille";2021/09/19;17:00;"Stade Chirac";Marcille
+"Coupe Intercommunale";SENIORS_1;"FC Louvigne";2021/09/19;17:00;"Stade du chat";Louvigne
+"Championnat Departementale";SENIORS_2;"FC Madre";2021/09/19;17:00;"Stade Mandela";Madre
+"Coupe Departementale";SENIORS_1;"FC Martigne";2021/09/26;17:00;"Stade Grenon";Martigne
+"Coupe Intercommunale";SENIORS_2;"FC Mayenne";2021/09/26;17:00;"Stade Hunault";Mayenne
+"Championnat Departementale";SENIORS_3;"FC Montsurs";2021/09/26;17:00;"Stade Gandhi";Montsurs
+"Coupe Intercommunale";SENIORS_3;"FC Renaze";2021/10/03;17:00;"Stade Municipale";Renaze
+"Coupe Departementale";SENIORS_2;"FC Pre-en-Pail";2021/10/03;17:00;"Stade Lesaint";Pre-en-Pail
+Amical;SENIORS_1;"FC Moulay";2021/10/03;17:00;"Stade Laffely";Moulay
+"Championnat Departementale";SENIORS_1;"FC Sace";2021/10/10;17:00;"Stade Municipale";Sace
+"Coupe Departementale";SENIORS_3;"FC Saint-Berthevin";2021/10/10;17:00;"Stade Laffely";Saint-Berthevin
+Amical;SENIORS_2;"FC Saint-Baudelle";2021/10/10;17:00;"Stade Lesaint";Saint-Baudelle
+"Coupe Intercommunale";SENIORS_1;"FC Saint-Loup-du-Gast";2021/10/17;17:00;"Stade Gandhi";Saint-Loup-du-Gast
+"Championnat Departementale";SENIORS_2;"FC Vaiges";2021/10/17;17:00;"Stade Hunault";Vaiges
+Amical;SENIORS_3;"FC Villaines-la-Juhel";2021/10/17;17:00;"Stade Grenon";Villaines-la-Juhel
+"Coupe Departementale";SENIORS_1;"FC Villaines-la-Juhel";2021/10/24;17:00;"Stade du petit moineau";Villaines-la-Juhel
+"Coupe Intercommunale";SENIORS_2;"FC Vaiges";2021/10/24;17:00;"Stade Gandhi";Vaiges
+"Championnat Departementale";SENIORS_3;"FC Saint-Loup-du-Gast";2021/10/24;17:00;"Stade Hunault";Saint-Loup-du-Gast
+"Coupe Intercommunale";SENIORS_3;"FC Sace";2021/10/31;17:00;"Stade du grand ourson";Sace
+Amical;SENIORS_1;"FC Saint-Berthevin";2021/10/31;17:00;"Stade Grenon";Saint-Berthevin
+"Coupe Departementale";SENIORS_2;"FC Saint-Baudelle";2021/10/31;17:00;"Stade du petit moineau";Saint-Baudelle
+"Coupe Departementale";SENIORS_3;"FC Moulay";2021/11/07;17:00;"Stade Mandela";Moulay
+"Championnat Departementale";SENIORS_1;"FC Renaze";2021/11/07;17:00;"Stade du chien";Renaze
+Amical;SENIORS_2;"FC Pre-en-Pail";2021/11/07;17:00;"Stade du chat";Pre-en-Pail
+"Coupe Intercommunale";SENIORS_1;"FC Montsurs";2021/11/14;17:00;"Stade Chirac";Montsurs
+"Championnat Departementale";SENIORS_2;"FC Mayenne";2021/11/14;17:00;"Stade Grenon";Mayenne
+Amical;SENIORS_3;"FC Martigne";2021/11/14;17:00;"Stade Hunault";Martigne
+"Coupe Departementale";SENIORS_1;"FC Marcille";2021/11/21;17:00;"Stade Gandhi";Marcille
+"Coupe Intercommunale";SENIORS_2;"FC Madre";2021/11/21;17:00;"Stade Laffely";Madre
+"Championnat Departementale";SENIORS_3;"FC Louvigne";2021/11/21;17:00;"Stade Lesaint";Louvigne
+"Coupe Intercommunale";SENIORS_3;"FC Le Ribay";2021/11/28;17:00;"Stade Hunault";"Le Ribay"
+"Coupe Departementale";SENIORS_2;"FC L Huisserie";2021/11/28;17:00;"Stade Gandhi";"L Huisserie"
+Amical;SENIORS_1;"FC Louverne";2021/11/28;17:00;"Stade Municipale";Louverne
+"Championnat Departementale";SENIORS_1;"FC Le Horps";2021/12/05;17:00;"Stade Grenon";"Le Horps"
+Amical;SENIORS_2;"FC Laval";2021/12/05;17:00;"Stade du petit moineau";Laval
+"Coupe Departementale";SENIORS_3;"FC La Gravelle";2021/12/05;17:00;"Stade Gandhi";"La Gravelle"
+"Coupe Intercommunale";SENIORS_1;"FC Juvigne";2021/12/12;17:00;"Stade Hunault";Juvigne
+"Championnat Departementale";SENIORS_2;"FC Javron-les-chapelles";2021/12/12;17:00;"Stade Grenon";Javron-les-chapelles
+Amical;SENIORS_3;"FC Grazay";2021/12/12;17:00;"Stade du petit moineau";Grazay
+"Championnat Departementale";SENIORS_3;"FC Ernee";2021/12/19;17:00;"Stade du chat";Ernee
+"Coupe Departementale";SENIORS_1;"FC Gorron";2021/12/19;17:00;"Stade du grand ourson";Gorron
+"Coupe Intercommunale";SENIORS_2;"FC Evron";2021/12/19;17:00;"Stade du chien";Evron
+Amical;SENIORS_1;"FC Craon";2021/12/26;17:00;"Stade Mandela";Craon
+"Coupe Departementale";SENIORS_2;"FC Contest";2021/12/26;17:00;"Stade Chirac";Contest
+"Coupe Intercommunale";SENIORS_3;"FC Commer";2021/12/26;17:00;"Stade Grenon";Commer
+"Championnat Departementale";SENIORS_1;"FC Chatillon-sur-Colmont";2022/01/02;17:00;"Stade Hunault";Chatillon-sur-Colmont
+Amical;SENIORS_2;"FC Chateau-Gontier";2022/01/02;17:00;"Stade Gandhi";Chateau-Gontier
+"Coupe Departementale";SENIORS_3;"FC Change";2022/01/02;17:00;"Stade Laffely";Change
+Amical;SENIORS_3;"FC Argentre";2022/01/09;17:00;"Stade Gandhi";Argentre
+"Championnat Departementale";SENIORS_2;"FC Bonchamp";2022/01/09;17:00;"Stade Municipale";Bonchamp
+"Coupe Intercommunale";SENIORS_1;"FC Brece";2022/01/09;17:00;"Stade Lesaint";Brece
+"Coupe Departementale";SENIORS_1;"FC Mayenne";2022/01/16;17:00;"Stade Hunault";Mayenne
+"Coupe Intercommunale";SENIORS_2;"FC Martigne";2022/01/16;17:00;"Stade Grenon";Martigne
+"Championnat Departementale";SENIORS_3;"FC Marcille";2022/01/16;17:00;"Stade du petit moineau";Marcille
+Amical;SENIORS_1;"FC Madre";2022/01/23;17:00;"Stade Gandhi";Madre
+"Coupe Departementale";SENIORS_2;"FC Louvigne";2022/01/23;17:00;"Stade Hunault";Louvigne
+"Coupe Intercommunale";SENIORS_3;"FC Louverne";2022/01/23;17:00;"Stade Grenon";Louverne
+"Coupe Departementale";SENIORS_3;"FC Le Horps";2022/01/30;17:00;"Stade du chien";"Le Horps"
+Amical;SENIORS_2;"FC Le Ribay";2022/01/30;17:00;"Stade du grand ourson";"Le Ribay"
+"Championnat Departementale";SENIORS_1;"FC L Huisserie";2022/01/30;17:00;"Stade du petit moineau";"L Huisserie"
+"Coupe Intercommunale";SENIORS_1;"FC Laval";2022/02/06;17:00;"Stade du chat";Laval
+"Championnat Departementale";SENIORS_2;"FC La Gravelle";2022/02/06;17:00;"Stade Mandela";"La Gravelle"
+Amical;SENIORS_3;"FC Juvigne";2022/02/06;17:00;"Stade Chirac";Juvigne
+"Coupe Departementale";SENIORS_1;"FC Javron-les-chapelles";2022/02/13;17:00;"Stade Grenon";Javron-les-chapelles
+"Coupe Intercommunale";SENIORS_2;"FC Grazay";2022/02/13;17:00;"Stade Hunault";Grazay
+"Championnat Departementale";SENIORS_3;"FC Gorron";2022/02/13;17:00;"Stade Gandhi";Gorron
+Amical;SENIORS_1;"FC Evron";2022/02/20;17:00;"Stade Laffely";Evron
+"Coupe Departementale";SENIORS_2;"FC Ernee";2022/02/20;17:00;"Stade Lesaint";Ernee
+"Coupe Intercommunale";SENIORS_3;"FC Craon";2022/02/20;17:00;"Stade Municipale";Craon
+"Championnat Departementale";SENIORS_1;"FC Contest";2022/02/27;17:00;"Stade Gandhi";Contest
+Amical;SENIORS_2;"FC Commer";2022/02/27;17:00;"Stade Hunault";Commer
+"Coupe Departementale";SENIORS_3;"FC Vaiges";2022/02/27;17:00;"Stade Grenon";Vaiges
+"Coupe Intercommunale";SENIORS_1;"FC Villaines-la-Juhel";2022/03/06;17:00;"Stade du petit moineau";Villaines-la-Juhel
+"Championnat Departementale";SENIORS_2;"FC Craon";2022/03/06;17:00;"Stade Gandhi";Craon
+Amical;SENIORS_3;"FC Vaiges";2022/03/06;17:00;"Stade Hunault";Vaiges
+"Championnat Departementale";SENIORS_3;"FC Saint-Baudelle";2022/03/13;17:00;"Stade du grand ourson";Saint-Baudelle
+"Coupe Intercommunale";SENIORS_2;"FC Saint-Berthevin";2022/03/13;17:00;"Stade du petit moineau";Saint-Berthevin
+"Coupe Departementale";SENIORS_1;"FC Saint-Loup-du-Gast";2022/03/13;17:00;"Stade Grenon";Saint-Loup-du-Gast
+Amical;SENIORS_1;"FC Sace";2022/03/20;17:00;"Stade du chien";Sace
+"Coupe Departementale";SENIORS_2;"FC Renaze";2022/03/20;17:00;"Stade du chat";Renaze
+"Coupe Intercommunale";SENIORS_3;"FC Pre-en-Pail";2022/03/20;17:00;"Stade Mandela";Pre-en-Pail
+"Championnat Departementale";SENIORS_1;"FC Moulay";2022/03/27;17:00;"Stade Chirac";Moulay
+Amical;SENIORS_2;"FC Montsurs";2022/03/27;17:00;"Stade Grenon";Montsurs
+"Coupe Departementale";SENIORS_3;"FC Mayenne";2022/03/27;17:00;"Stade Hunault";Mayenne
+Amical;SENIORS_3;"FC Madre";2022/04/03;17:00;"Stade Lesaint";Madre
+"Championnat Departementale";SENIORS_2;"FC Marcille";2022/04/03;17:00;"Stade Laffely";Marcille
+"Coupe Intercommunale";SENIORS_1;"FC Martigne";2022/04/03;17:00;"Stade Gandhi";Martigne
+"Coupe Departementale";SENIORS_1;"FC Louvigne";2022/04/10;17:00;"Stade Municipale";Louvigne
+"Coupe Intercommunale";SENIORS_2;"FC Louverne";2022/04/10;17:00;"Stade Gandhi";Louverne
+"Championnat Departementale";SENIORS_3;"FC L Huisserie";2022/04/10;17:00;"Stade Hunault";"L Huisserie"
+Amical;SENIORS_1;"FC Le Ribay";2022/04/17;17:00;"Stade Grenon";"Le Ribay"
+"Coupe Departementale";SENIORS_2;"FC Le Horps";2022/04/17;17:00;"Stade du petit moineau";"Le Horps"
+"Coupe Intercommunale";SENIORS_3;"FC Laval";2022/04/17;17:00;"Stade Gandhi";Laval
+"Championnat Departementale";SENIORS_1;"FC La Gravelle";2022/04/24;17:00;"Stade Hunault";"La Gravelle"
+Amical;SENIORS_2;"FC Juvigne";2022/04/24;17:00;"Stade Grenon";Juvigne
+"Coupe Departementale";SENIORS_3;"FC Javron-les-chapelles";2022/04/24;17:00;"Stade du petit moineau";Javron-les-chapelles
+Amical;SENIORS_3;"FC Commer";2022/05/01;17:00;"Stade du chat";Commer
+"Championnat Departementale";SENIORS_2;"FC Chatillon-sur-Colmont";2022/05/01;17:00;"Stade du chien";Chatillon-sur-Colmont
+"Coupe Intercommunale";SENIORS_1;"FC Chateau-Gontier";2022/05/01;17:00;"Stade du grand ourson";Chateau-Gontier
+"Coupe Departementale";SENIORS_1;"FC Contest";2022/05/08;17:00;"Stade Mandela";Contest
+"Coupe Intercommunale";SENIORS_2;"FC Craon";2022/05/08;17:00;"Stade Chirac";Craon
+"Championnat Departementale";SENIORS_3;"FC Ernee";2022/05/08;17:00;"Stade Grenon";Ernee
+Amical;SENIORS_1;"FC Evron";2022/05/15;17:00;"Stade Hunault";Evron
+"Coupe Departementale";SENIORS_2;"FC Gorron";2022/05/15;17:00;"Stade Gandhi";Gorron
+"Coupe Intercommunale";SENIORS_3;"FC Grazay";2022/05/15;17:00;"Stade Laffely";Grazay
+"Coupe Departementale";SENIORS_3;"FC La Gravelle";2022/05/22;17:00;"Stade Gandhi";"La Gravelle"
+Amical;SENIORS_2;"FC Juvigne";2022/05/22;17:00;"Stade Municipale";Juvigne
+"Championnat Departementale";SENIORS_1;"FC Javron-les-chapelles";2022/05/22;17:00;"Stade Lesaint";Javron-les-chapelles
+"Championnat Departementale";SENIORS_2;"FC Le Horps";2022/05/29;17:00;"Stade Grenon";"Le Horps"
+Amical;SENIORS_3;"FC Le Ribay";2022/05/29;17:00;"Stade du petit moineau";"Le Ribay"
+"Coupe Intercommunale";SENIORS_1;"FC Laval";2022/05/29;17:00;"Stade Hunault";Laval
+"Coupe Departementale";SENIORS_1;"FC L Huisserie";2022/06/05;17:00;"Stade Gandhi";"L Huisserie"
+"Coupe Intercommunale";SENIORS_2;"FC Louverne";2022/06/05;17:00;"Stade Hunault";Louverne
+"Championnat Departementale";SENIORS_3;"FC Louvigne";2022/06/05;17:00;"Stade Grenon";Louvigne
+Amical;SENIORS_1;"FC Madre";2022/06/12;17:00;"Stade du petit moineau";Madre
+"Coupe Departementale";SENIORS_2;"FC Marcille";2022/06/12;17:00;"Stade du grand ourson";Marcille
+"Coupe Intercommunale";SENIORS_3;"FC Martigne";2022/06/12;17:00;"Stade du chien";Martigne
+"Coupe Departementale";SENIORS_3;"FC Villaines-la-Juhel";2022/06/19;17:00;"Stade Chirac";Villaines-la-Juhel
+"Championnat Departementale";SENIORS_1;"FC Mayenne";2022/06/19;17:00;"Stade du chat";Mayenne
+Amical;SENIORS_2;"FC Montsurs";2022/06/19;17:00;"Stade Mandela";Montsurs
+"Coupe Intercommunale";SENIORS_1;"FC Villaines-la-Juhel";2022/06/26;17:00;"Stade Grenon";Villaines-la-Juhel
+"Championnat Departementale";SENIORS_2;"FC Vaiges";2022/06/26;17:00;"Stade Hunault";Vaiges
+Amical;SENIORS_3;"FC Mayenne";2022/06/26;17:00;"Stade Gandhi";Mayenne
+"Coupe Departementale";SENIORS_1;"FC Saint-Loup-du-Gast";2022/07/03;17:00;"Stade Laffely";Saint-Loup-du-Gast
+"Coupe Intercommunale";SENIORS_2;"FC Saint-Berthevin";2022/07/03;17:00;"Stade Lesaint";Saint-Berthevin
+"Championnat Departementale";SENIORS_3;"FC Saint-Baudelle";2022/07/03;17:00;"Stade Municipale";Saint-Baudelle
+"Coupe Intercommunale";SENIORS_3;"FC Pre-en-Pail";2022/07/10;17:00;"Stade Grenon";Pre-en-Pail
+"Coupe Departementale";SENIORS_2;"FC Renaze";2022/07/10;17:00;"Stade Hunault";Renaze
+Amical;SENIORS_1;"FC Sace";2022/07/10;17:00;"Stade Gandhi";Sace
+"Championnat Departementale";SENIORS_1;"FC Moulay";2022/07/17;17:00;"Stade du petit moineau";Moulay
+Amical;SENIORS_2;"FC Montsurs";2022/07/17;17:00;"Stade Gandhi";Montsurs
+"Coupe Departementale";SENIORS_3;"FC Mayenne";2022/07/17;17:00;"Stade Hunault";Mayenne
+"Coupe Intercommunale";SENIORS_1;"FC Martigne";2022/07/24;17:00;"Stade Grenon";Martigne
+"Championnat Departementale";SENIORS_2;"FC Marcille";2022/07/24;17:00;"Stade du petit moineau";Marcille
+Amical;SENIORS_3;"FC Madre";2022/07/24;17:00;"Stade du grand ourson";Madre
+"Coupe Departementale";SENIORS_1;"FC Louvigne";2022/07/31;17:00;"Stade du chien";Louvigne
+"Coupe Intercommunale";SENIORS_2;"FC Louverne";2022/07/31;17:00;"Stade du chat";Louverne
+"Championnat Departementale";SENIORS_3;"FC L Huisserie";2022/07/31;17:00;"Stade Mandela";"L Huisserie"
