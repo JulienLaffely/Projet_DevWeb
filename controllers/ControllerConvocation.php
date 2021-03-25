@@ -29,6 +29,15 @@
 				fclose($Matchs);
 			}
 
+			foreach ($this->_model->getAllAbs() as $ligne) {
+				$FeuilleDesAbsences[]=$ligne;	
+			}
+
+			$Absences=fopen('FeuilleDesAbsences.json','w+');
+			fwrite($Absences,json_encode($FeuilleDesAbsences));
+			fclose($Absences);
+
+
 
 			if(isset($_POST['dateConvoc'])){
 				$date=$_POST['dateConvoc'];
@@ -58,66 +67,66 @@
 							<td id='tdConvoc' name='case1' ></td>
 							<td id='tdConvoc' name='case1'></td>
 							<td id='tdConvoc' name='case1'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
+							<td id='tdConvoc' name='exempts'></td>
+							<td id='tdConvoc' name='nl'></td>
+							<td id='tdConvoc' name='ble'></td>
+							<td id='tdConvoc' name='sus'></td>
+							<td id='tdConvoc' name='abs'></td>
 						</tr>
 						<tr>
 							<td id='tdConvoc'><b>ADVERSAIRE</b></td>
 							<td id='tdConvoc' name='case2'></td>
 							<td id='tdConvoc' name='case2'></td>
 							<td id='tdConvoc' name='case2'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
+							<td id='tdConvoc' name='exempts'></td>
+							<td id='tdConvoc' name='nl'></td>
+							<td id='tdConvoc' name='ble'></td>
+							<td id='tdConvoc' name='sus'></td>
+							<td id='tdConvoc' name='abs'></td>
 						</tr>
 						<tr>
 							<td id='tdConvoc'><b>SITE</b></td>
 							<td id='tdConvoc' name='case3' ></td>
 							<td id='tdConvoc' name='case3'></td>
 							<td id='tdConvoc' name='case3'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
+							<td id='tdConvoc' name='exempts'></td>
+							<td id='tdConvoc' name='nl'></td>
+							<td id='tdConvoc' name='ble'></td>
+							<td id='tdConvoc' name='sus'></td>
+							<td id='tdConvoc' name='abs'></td>
 						</tr>
 						<tr>
 							<td id='tdConvoc'><b>TERRAIN</b></td>
 							<td id='tdConvoc' name='case4' ></td>
 							<td id='tdConvoc' name='case4'></td>
 							<td id='tdConvoc' name='case4'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
+							<td id='tdConvoc' name='exempts'></td>
+							<td id='tdConvoc' name='nl'></td>
+							<td id='tdConvoc' name='ble'></td>
+							<td id='tdConvoc' name='sus'></td>
+							<td id='tdConvoc' name='abs'></td>
 						</tr>
 						<tr>
 							<td id='tdConvoc'><b>HEURE</b></td>
 							<td id='tdConvoc' name='case5' ></td>
 							<td id='tdConvoc' name='case5'></td>
 							<td id='tdConvoc' name='case5'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
+							<td id='tdConvoc' name='exempts'></td>
+							<td id='tdConvoc' name='nl'></td>
+							<td id='tdConvoc' name='ble'></td>
+							<td id='tdConvoc' name='sus'></td>
+							<td id='tdConvoc' name='abs'></td>
 						</tr>
 						<tr>
 							<td id='tdConvoc'><b>EQUIPE</b></td>
 							<td id='tdConvoc' name='case6'></td>
 							<td id='tdConvoc' name='case6'></td>
 							<td id='tdConvoc' name='case6'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
-							<td id='tdConvoc'></td>
+							<td id='tdConvoc' name='exempts'></td>
+							<td id='tdConvoc' name='nl'></td>
+							<td id='tdConvoc' name='ble'></td>
+							<td id='tdConvoc' name='sus'></td>
+							<td id='tdConvoc' name='abs'></td>
 						</tr>
 						
 						
