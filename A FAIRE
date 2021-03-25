@@ -1,2 +1,4 @@
 - Gestion des accès secrétaire/entraineur
-- Utilisation d'un fichier csv ? (stocker les dates de rencontre , les competitions etc)
+- Page de convocation
+- Fichier .ini pour la connexion facile à la bdd pour le prof
+- faire un read me et commenter le code
