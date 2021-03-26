@@ -342,8 +342,12 @@ function ActualisationDesTables()  {
       {
         document.getElementById('tableConvoc').deleteRow(document.getElementById('tableConvoc').rows.length-1);
       }
-      
-      for(let i = 0 ; i<6 ;i++){
+      document.getElementsByName("exempts")[6].setAttribute('style','visibility:hidden');
+      document.getElementsByName("abs")[6].setAttribute('style','visibility:hidden');
+      document.getElementsByName("sus")[6].setAttribute('style','visibility:hidden');
+      document.getElementsByName("ble")[6].setAttribute('style','visibility:hidden');
+      document.getElementsByName("nl")[6].setAttribute('style','visibility:hidden');
+      for(let i = 0 ; i<7 ;i++){
         document.getElementsByName("exempts")[i].innerHTML="";
         document.getElementsByName("abs")[i].innerHTML="";
         document.getElementsByName("sus")[i].innerHTML="";
