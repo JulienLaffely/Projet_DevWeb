@@ -128,7 +128,17 @@
 							<td id='tdConvoc' name='sus'></td>
 							<td id='tdConvoc' name='abs'></td>
 						</tr>
-						
+						<tr>
+							<td id='tdConvoc' style='visibility:hidden;'></td>
+							<td id='tdConvoc'name='placeSelect1'></td>
+							<td id='tdConvoc' name='placeSelect2''></td>
+							<td id='tdConvoc' name='placeSelect3'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='exempts'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='nl'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='ble'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='sus'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='abs'></td>
+						</tr>
 						
 					</table>
 				  </form>

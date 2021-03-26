@@ -64,8 +64,281 @@ function DecouperCsv(data){
     return csvData;
 }
 
+function modifSelect1(){
+  let SelectedOptions1=[];
+  let SelectedOptions2=[];
+  for(var i = 0 ; i < document.getElementsByTagName('select')[1].selectedOptions.length;++i){
+    SelectedOptions1.push(document.getElementsByTagName('select')[1].selectedOptions[i].value);
+  }
+  for(var i = 0 ; i < document.getElementsByTagName('select')[2].selectedOptions.length;++i){
+    SelectedOptions2.push(document.getElementsByTagName('select')[2].selectedOptions[i].value);
+  }
+  document.getElementsByTagName('select')[1].remove();
+  document.getElementsByTagName('select')[1].remove();
+
+    var parent2 = document.getElementsByName('placeSelect2')[0];
+    var select2 = document.createElement("select");
+    select2.multiple= 'true';
+    parent2.appendChild(select2);
+    select2.setAttribute('name',"select2");
+    select2.setAttribute('onchange',"modifSelect2()");
+
+    var parent3 = document.getElementsByName('placeSelect3')[0];
+    var select3 = document.createElement("select");
+    select3.multiple= 'true';
+    parent3.appendChild(select3);
+    select3.setAttribute('name',"select3");
+    select3.setAttribute('onchange',"modifSelect3()");
+
+  for(var i = 0 ; i< document.getElementsByName('exempts').length ;++i){
+    if(document.getElementsByName('exempts')[i].children.length==1){
+      if(!SelectedOptions1.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML) && !SelectedOptions2.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML)){
+        document.getElementsByName('exempts')[i].innerHTML=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+        var option2 = document.createElement("option");
+        option2.value=document.getElementsByName('exempts')[i].innerHTML;
+        option2.text=document.getElementsByName('exempts')[i].innerHTML;
+        select2.appendChild(option2);
+
+        var option3 = document.createElement("option");
+        option3.value=document.getElementsByName('exempts')[i].innerHTML;
+        option3.text=document.getElementsByName('exempts')[i].innerHTML;
+       select3.appendChild(option3);
+      }
+      else{
+        if(SelectedOptions1.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML)){
+        var option2 = document.createElement("option");
+        option2.value=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       option2.text=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       select2.appendChild(option2);}else{
+
+       var option3 = document.createElement("option");
+       option3.value=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       option3.text=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       select3.appendChild(option3);}
+      }
+    }
+    else{  var option2 = document.createElement("option");
+      option2.value=document.getElementsByName('exempts')[i].innerHTML;
+      option2.text=document.getElementsByName('exempts')[i].innerHTML;
+      select2.appendChild(option2);
+
+      var option3 = document.createElement("option");
+      option3.value=document.getElementsByName('exempts')[i].innerHTML;
+      option3.text=document.getElementsByName('exempts')[i].innerHTML;
+      select3.appendChild(option3);}
+  }
+  
+  for(var i = 0 ; i< document.getElementsByName('exempts').length ;++i){
+      for(var j = 0 ; j< document.getElementsByTagName('select')[0].selectedOptions.length ;++j){
+        if(document.getElementsByName('exempts')[i].innerHTML==document.getElementsByTagName('select')[0].selectedOptions[j].value){
+          document.getElementsByName('exempts')[i].innerHTML="<span style='visibility:hidden;'>"+document.getElementsByName('exempts')[i].innerHTML+"</span>";
+          for(var k = 0 ; k<document.getElementsByTagName('select')[1].options.length;++k){
+            if(document.getElementsByTagName('select')[1].options[k].value==document.getElementsByTagName('select')[0].selectedOptions[j].value)document.getElementsByTagName('select')[1].options[k].remove();
+          }
+          for(var l = 0 ; l<document.getElementsByTagName('select')[2].options.length;++l){
+            if(document.getElementsByTagName('select')[2].options[l].value==document.getElementsByTagName('select')[0].selectedOptions[j].value)document.getElementsByTagName('select')[2].options[l].remove();
+          }
+        }
+      }  
+  }
+  for(var i = 0 ; i<select2.options.length;++i){
+    for(var j = 0 ; j<SelectedOptions1.length ; ++j){
+      if(select2.options[i].value==SelectedOptions1[j])select2.options[i].selected=true;
+    }
+  }
+
+  for(var i = 0 ; i<select3.options.length;++i){
+    for(var j = 0 ; j<SelectedOptions2.length ; ++j){
+      if(select3.options[i].value==SelectedOptions2[j])select3.options[i].selected=true;
+    }
+  }
+
+}
+
+function modifSelect2(){
+  let SelectedOptions1=[];
+  let SelectedOptions2=[];
+  for(var i = 0 ; i < document.getElementsByTagName('select')[0].selectedOptions.length;++i){
+    SelectedOptions1.push(document.getElementsByTagName('select')[0].selectedOptions[i].value);
+  }
+  for(var i = 0 ; i < document.getElementsByTagName('select')[2].selectedOptions.length;++i){
+    SelectedOptions2.push(document.getElementsByTagName('select')[2].selectedOptions[i].value);
+  }
+  document.getElementsByTagName('select')[0].remove();
+  document.getElementsByTagName('select')[1].remove();
+
+    var parent1 = document.getElementsByName('placeSelect1')[0];
+    var select1 = document.createElement("select");
+    select1.multiple= 'true';
+    parent1.appendChild(select1);
+    select1.setAttribute('name',"select1");
+    select1.setAttribute('onchange',"modifSelect1()");
+
+    var parent3 = document.getElementsByName('placeSelect3')[0];
+    var select3 = document.createElement("select");
+    select3.multiple= 'true';
+    parent3.appendChild(select3);
+    select3.setAttribute('name',"select3");
+    select3.setAttribute('onchange',"modifSelect3()");
+
+  for(var i = 0 ; i< document.getElementsByName('exempts').length ;++i){
+    if(document.getElementsByName('exempts')[i].children.length==1){
+      if(!SelectedOptions1.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML) && !SelectedOptions2.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML)){
+        document.getElementsByName('exempts')[i].innerHTML=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+        var option1 = document.createElement("option");
+        option1.value=document.getElementsByName('exempts')[i].innerHTML;
+        option1.text=document.getElementsByName('exempts')[i].innerHTML;
+       select1.appendChild(option1);
+
+        var option3 = document.createElement("option");
+        option3.value=document.getElementsByName('exempts')[i].innerHTML;
+        option3.text=document.getElementsByName('exempts')[i].innerHTML;
+        select3.appendChild(option3);
+      }
+      else{
+        if(SelectedOptions1.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML)){
+        var option1 = document.createElement("option");
+        option1.value=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+        option1.text=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+        select1.appendChild(option1);}else{
+
+        var option3 = document.createElement("option");
+        option3.value=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+        option3.text=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+        select3.appendChild(option3);}
+      }
+    }
+    else {  var option1 = document.createElement("option");
+      option1.value=document.getElementsByName('exempts')[i].innerHTML;
+      option1.text=document.getElementsByName('exempts')[i].innerHTML;
+      select1.appendChild(option1);
+
+      var option3 = document.createElement("option");
+      option3.value=document.getElementsByName('exempts')[i].innerHTML;
+      option3.text=document.getElementsByName('exempts')[i].innerHTML;
+      select3.appendChild(option3);}
+  }
+  
+  for(var i = 0 ; i< document.getElementsByName('exempts').length ;++i){
+      for(var j = 0 ; j< document.getElementsByTagName('select')[1].selectedOptions.length ;++j){
+        if(document.getElementsByName('exempts')[i].innerHTML==document.getElementsByTagName('select')[1].selectedOptions[j].value){
+          document.getElementsByName('exempts')[i].innerHTML="<span style='visibility:hidden;'>"+document.getElementsByName('exempts')[i].innerHTML+"</span>";
+          for(var k = 0 ; k<document.getElementsByTagName('select')[0].options.length;++k){
+            if(document.getElementsByTagName('select')[0].options[k].value==document.getElementsByTagName('select')[1].selectedOptions[j].value)document.getElementsByTagName('select')[0].options[k].remove();
+          }
+          for(var l = 0 ; l<document.getElementsByTagName('select')[2].options.length;++l){
+            if(document.getElementsByTagName('select')[2].options[l].value==document.getElementsByTagName('select')[1].selectedOptions[j].value)document.getElementsByTagName('select')[2].options[l].remove();
+          }
+        }
+      }  
+  }
+  for(var i = 0 ; i<select1.options.length;++i){
+    for(var j = 0 ; j<SelectedOptions1.length ; ++j){
+      if(select1.options[i].value==SelectedOptions1[j])select1.options[i].selected=true;
+    }
+  }
+
+  for(var i = 0 ; i<select3.options.length;++i){
+    for(var j = 0 ; j<SelectedOptions2.length ; ++j){
+      if(select3.options[i].value==SelectedOptions2[j])select3.options[i].selected=true;
+    }
+  }
+}
+
+function modifSelect3(){
+  let SelectedOptions1=[];
+  let SelectedOptions2=[];
+  for(var i = 0 ; i < document.getElementsByTagName('select')[0].selectedOptions.length;++i){
+    SelectedOptions1.push(document.getElementsByTagName('select')[0].selectedOptions[i].value);
+  }
+  for(var i = 0 ; i < document.getElementsByTagName('select')[1].selectedOptions.length;++i){
+    SelectedOptions2.push(document.getElementsByTagName('select')[1].selectedOptions[i].value);
+  }
+  document.getElementsByTagName('select')[0].remove();
+  document.getElementsByTagName('select')[0].remove();
+
+    var parent1 = document.getElementsByName('placeSelect1')[0];
+    var select1 = document.createElement("select");
+    select1.multiple= 'true';
+    parent1.appendChild(select1);
+    select1.setAttribute('name',"select1");
+    select1.setAttribute('onchange',"modifSelect1()");
+
+    var parent2 = document.getElementsByName('placeSelect2')[0];
+    var select2 = document.createElement("select");
+    select2.multiple= 'true';
+    parent2.appendChild(select2);
+    select2.setAttribute('name',"select2");
+    select2.setAttribute('onchange',"modifSelect2()");
+
+  for(var i = 0 ; i< document.getElementsByName('exempts').length ;++i){
+    if(document.getElementsByName('exempts')[i].children.length==1){
+      if(!SelectedOptions1.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML) && !SelectedOptions2.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML)){
+        document.getElementsByName('exempts')[i].innerHTML=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+        var option1 = document.createElement("option");
+        option1.value=document.getElementsByName('exempts')[i].innerHTML;
+        option1.text=document.getElementsByName('exempts')[i].innerHTML;
+        select1.appendChild(option1);
+
+        var option2 = document.createElement("option");
+        option2.value=document.getElementsByName('exempts')[i].innerHTML;
+        option2.text=document.getElementsByName('exempts')[i].innerHTML;
+        select2.appendChild(option2);
+      }
+      else{
+        if(SelectedOptions1.includes(document.getElementsByName('exempts')[i].firstChild.innerHTML)){
+        var option1 = document.createElement("option");
+        option1.value=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       option1.text=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       select1.appendChild(option1);}else{
+
+       var option2 = document.createElement("option");
+       option2.value=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       option2.text=document.getElementsByName('exempts')[i].firstChild.innerHTML;
+       select2.appendChild(option2);}
+      }
+    }
+    else{ 
+      var option1 = document.createElement("option");
+      option1.value=document.getElementsByName('exempts')[i].innerHTML;
+      option1.text=document.getElementsByName('exempts')[i].innerHTML;
+      select1.appendChild(option1);
+
+      var option2 = document.createElement("option");
+      option2.value=document.getElementsByName('exempts')[i].innerHTML;
+      option2.text=document.getElementsByName('exempts')[i].innerHTML;
+      select2.appendChild(option2);}
+  }
+  
+  for(var i = 0 ; i< document.getElementsByName('exempts').length ;++i){
+      for(var j = 0 ; j< document.getElementsByTagName('select')[2].selectedOptions.length ;++j){
+        if(document.getElementsByName('exempts')[i].innerHTML==document.getElementsByTagName('select')[2].selectedOptions[j].value){
+          document.getElementsByName('exempts')[i].innerHTML="<span style='visibility:hidden;'>"+document.getElementsByName('exempts')[i].innerHTML+"</span>";
+          for(var k = 0 ; k<document.getElementsByTagName('select')[0].options.length;++k){
+            if(document.getElementsByTagName('select')[0].options[k].value==document.getElementsByTagName('select')[2].selectedOptions[j].value)document.getElementsByTagName('select')[0].options[k].remove();
+          }
+          for(var l = 0 ; l<document.getElementsByTagName('select')[1].options.length;++l){
+            if(document.getElementsByTagName('select')[1].options[l].value==document.getElementsByTagName('select')[2].selectedOptions[j].value)document.getElementsByTagName('select')[1].options[l].remove();
+          }
+        }
+      }  
+  }
+  for(var i = 0 ; i<select1.options.length;++i){
+    for(var j = 0 ; j<SelectedOptions1.length ; ++j){
+      if(select1.options[i].value==SelectedOptions1[j])select1.options[i].selected=true;
+    }
+  }
+
+  for(var i = 0 ; i<select2.options.length;++i){
+    for(var j = 0 ; j<SelectedOptions2.length ; ++j){
+      if(select2.options[i].value==SelectedOptions2[j])select2.options[i].selected=true;
+    }
+  }
+}
+
 function ActualisationDesTables()  {
-      while(document.getElementById('tableConvoc').rows.length>7)
+
+      while(document.getElementById('tableConvoc').rows.length>8)
       {
         document.getElementById('tableConvoc').deleteRow(document.getElementById('tableConvoc').rows.length-1);
       }
@@ -252,8 +525,65 @@ function ActualisationDesTables()  {
               });
             }
           };
-          xhttp2.open("GET","FeuilleDesAbsences.json",true);
+          xhttp2.open("GET","FeuilleDesAbsences.json",false);
           xhttp2.send();
 
+          //CHARGEMENT DES SELECTIONS DE JOUEURS
+          let boucle = 0 ;
+          let joueurSelect = [];
+          while(document.getElementsByName('exempts')[boucle]!=null ){ 
+            if(document.getElementsByName('exempts')[boucle].innerText!="") joueurSelect.push(document.getElementsByName('exempts')[boucle].innerHTML);
+            ++boucle;
+          }
+          var parent1 = document.getElementsByName('placeSelect1')[0];
+          var select1 = document.createElement("select");
+          select1.multiple= 'true';
+          parent1.appendChild(select1);
+          select1.setAttribute('name',"select1");
+          select1.setAttribute('onchange',"modifSelect1()");
+          for(var i = 0 ; i<joueurSelect.length ; i++){
+            var option = document.createElement("option");
+            option.value=joueurSelect[i];
+            option.text=joueurSelect[i];
+            select1.appendChild(option);
+
+          }
+          if(document.getElementsByName('select1').length==2){
+            document.getElementsByName('select1')[0].remove();
+          }
+
+          var parent2 = document.getElementsByName('placeSelect2')[0];
+          var select2 = document.createElement("select");
+          select2.multiple= 'true';
+          parent2.appendChild(select2);
+          select2.setAttribute('name',"select2");
+          select2.setAttribute('onchange',"modifSelect2()");
+          for(var i = 0 ; i<joueurSelect.length ; i++){
+            var option2 = document.createElement("option");
+            option2.value=joueurSelect[i];
+            option2.text=joueurSelect[i];
+            select2.appendChild(option2);
+
+          }
+          if(document.getElementsByName('select2').length==2){
+            document.getElementsByName('select2')[0].remove();
+          }
+
+          var parent3 = document.getElementsByName('placeSelect3')[0];
+          var select3 = document.createElement("select");
+          select3.multiple= 'true';
+          parent3.appendChild(select3);
+          select3.setAttribute('name',"select3");
+          select3.setAttribute('onchange',"modifSelect3()");
+          for(var i = 0 ; i<joueurSelect.length ; i++){
+            var option3 = document.createElement("option");
+            option3.value=joueurSelect[i];
+            option3.text=joueurSelect[i];
+            select3.appendChild(option3);
+
+          }
+          if(document.getElementsByName('select3').length==2){
+            document.getElementsByName('select3')[0].remove();
+          }
       }
 }
