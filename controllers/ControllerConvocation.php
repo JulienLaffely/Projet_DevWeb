@@ -4,6 +4,7 @@
 
 	class ControllerConvocation
 	{
+		private $_view ;
 		private $_model ;
 
 		public function __construct()
@@ -182,6 +183,7 @@
 					<input type='hidden' value='' name='joueurs3'/>
 				  </form>
 			<script>ActualisationDesTables()</script></br></br>";	
+			if(file_get_contents("role.txt")!="Entraineur")echo "<script>desactivationRole()</script>";
 		}
 
 		public function FichierJsonConvoc(){

@@ -16,7 +16,6 @@
 		public function AfficheCalendrier()
 		{
 			echo "<p style='margin-left:auto;margin-right:auto;width:85%'>* Au maximum, 159 matchs peuvent avoir lieu au cour de la saison. Si ce nombre est dépasser, vous allez devoir supprimer des rencontres pour pouvoir programmer tous les matchs.</p>";
-			echo "<form method='post'>";
 			$i=0;
 			$equipesadverses=[];
 			$terrains=[];
@@ -77,6 +76,7 @@
 						$Heure="Heure".strval($i);
 						$Terrain="Terrain".strval($i);
 						$Site="Site".strval($i);
+
 						echo "
 							<tr>
 								<td id='tdc'>
@@ -178,11 +178,12 @@
 						<input type='submit' name='AjoutMatch' value='Ajouter la rencontre' style='height:30px;width:11%;margin-left:10px;'/>
 					 </fieldset></br></br>";
 			}
-			echo "<input type='hidden' name='nbMatch' value=$i /> </form>"
+			echo "<input type='hidden' name='nbMatch' value=$i /></form> "
 				 ;
 			if(isset($_POST['AjoutMatch'])){
 				echo "<script>document.getElementsByName('MajCSV')[0].click()</script>";
 			}
+			if(file_get_contents("role.txt")!="Secrétaire")echo "<script>desactivationRole()</script>";
 		}
 
 		public function deleteCSV()

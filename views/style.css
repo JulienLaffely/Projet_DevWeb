@@ -16,6 +16,13 @@ body{
 	margin-left: 300px;
 	margin-right: 300px;
 }
+
+#accueil2{
+    border: solid 3px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 #ajoutMatch{
     border: solid 3px;
    margin-left : auto;
@@ -30,7 +37,23 @@ body{
     margin-right: auto;
 }
 
-#tablep {
+#tbAccueil {
+    margin-left : auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#tbAccueil,#tdacceuil {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#tdacceuil{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#tablep{
     margin-left : auto;
     margin-right: auto;
     width: 50%;

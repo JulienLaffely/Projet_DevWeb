@@ -3,6 +3,7 @@
 	{
 		private $_file;
 		private $_t;
+		private $_role;
 
 		public function __construct($action)
 		{
@@ -20,6 +21,7 @@
 			$view = $this->generateFile('views/template.php',array('t' => $this->_t, 'content' => $content));
 
 			echo $view;
+
 		}
 
 		// Genere un fichier vue et renvoie le résultat produit

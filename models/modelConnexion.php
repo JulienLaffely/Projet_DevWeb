@@ -13,13 +13,15 @@ class modelConnexion extends Model
 				$this->_mdp=$mdp;
 	}
 
-	public function connexionAutoriser() : bool{
+	public function connexionAutoriser() {
 		$bdd=$this->getBdd();
 		$compte=$bdd->query('SELECT * FROM authentification');
 		foreach ($compte as $ligne) {
-			if(($ligne["login"]==$this->_log)&&($ligne["mdp"]==$this->_mdp)) return true;
+			if(($ligne["login"]==$this->_log)&&($ligne["mdp"]==$this->_mdp)){
+				return $ligne['role'];
+			} 
 		}
-		return false ;
+		return "" ;
 	}
 }
 

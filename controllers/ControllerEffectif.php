@@ -18,7 +18,7 @@
 
 		public function AfficheJoueurs()
 		{
-			echo "</br></br></br>
+			echo "</br></br></br><form method='post'>
 					<table id='tableE'>
 					<tr>
 						<td id='tde'><b>NOM</b></td>
@@ -38,7 +38,7 @@
 
 		public function AfficheEnregistrementJoueur()
 		{
-			echo "<form method='post'>
+			echo "
 					<fieldset id='Enregistrement'>
 					<legend>Enregistrement de nouveau joueur</legend>
 					<label style='margin-left: 30px'>Nom</label>
@@ -51,6 +51,7 @@
 					<input type='submit' name='NewJoueur' id='BoutAjoutJoueur' value='Enregistrer un nouveau joueur' style='margin-left: 365px;height:50px;background-color:green;width:220px'/>
 					</fieldset>
 				</form>";
+				if(file_get_contents("role.txt")!="Secrétaire")echo "<script>desactivationRole()</script>";
 		}
 	}
 ?>

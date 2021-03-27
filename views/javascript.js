@@ -689,4 +689,26 @@ function ActualisationDesTables()  {
           xhttp3.open("GET","Convocations.json",false);
           xhttp3.send();
       }
+      var xhttp4 = new XMLHttpRequest();
+          xhttp4.onreadystatechange = function() {
+            if(xhttp4.readyState == 4 && xhttp4.status == 200){
+              var role = xhttp4.response;
+              if(role!="Entraineur")desactivationRole();
+            }
+          };
+          xhttp4.open("GET","role.txt",false);
+          xhttp4.send();
+}
+
+function desactivationRole()
+{
+       for(let i = 0 ; i< document.getElementsByTagName('select').length;++i){
+          document.getElementsByTagName('select')[i].disabled=true;
+        }
+        for(let i = 5 ; i< document.getElementsByTagName('input').length;++i){
+          if(document.getElementsByTagName('input')[i].value!="role"){
+           document.getElementsByTagName('input')[i].disabled=true;
+        }
+        if(document.getElementsByName('dateConvoc')[0]!=null)document.getElementsByName('dateConvoc')[0].disabled=false;
+      }
 }

@@ -6,7 +6,6 @@
 <input type="submit" name="onglet" value="Convocation" />
 <input type="submit" name="onglet" value="Effectif"/>
 <input type="submit" name="onglet" value="Accueil" />
-</form>
 </center>
 </br>
 

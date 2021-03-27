@@ -60,7 +60,7 @@
 				}
 			}
 			echo "</table></br>
-			<input type='submit' value='Enregistrer les modifictions' id='modifabs' name='modifabs'/></form>
-			</div></body></html>";
+			<input type='submit' value='Enregistrer les modifictions' id='modifabs' name='modifabs'/>
+			</div></body></html></form>";
 		}
 	}

@@ -10,9 +10,13 @@
 		public function __construct($log,$mdp)
 		{
 				$this->_model = new modelConnexion($log,$mdp);
-				if($this->_model->connexionAutoriser()){
+				$role=$this->_model->connexionAutoriser();
+				if($role!=""){
 					$this->_view = new View('Connexion');
 					$this->_view->generate();
+					$fichierRole=fopen('role.txt','w+');
+					fwrite($fichierRole,$role);
+					fclose($fichierRole);
 				}
 				else{
 					$this->alerteconnexion();
