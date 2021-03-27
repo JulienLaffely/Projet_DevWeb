@@ -10,7 +10,11 @@ class Router
 	{
 		try
 		{
-			if(isset($_POST['Delete'])||isset($_POST['MajCSV'])||isset($_POST['AjoutMatch'])){
+			if(isset($_POST['Brouillon'])||isset($_POST['ConvocVal']) ||isset($_POST['Supp'])){
+				require_once('controllers/ControllerConvocation.php');
+				$this->_ctrl = new ControllerConvocation();
+			}
+			else if(isset($_POST['Delete'])||isset($_POST['MajCSV'])||isset($_POST['AjoutMatch'])){
 				require_once('controllers/ControllerCalendrier.php');
 				$this->_ctrl = new ControllerCalendrier();
 			}

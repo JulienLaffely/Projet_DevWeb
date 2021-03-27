@@ -152,7 +152,18 @@ function modifSelect1(){
       if(select3.options[i].value==SelectedOptions2[j])select3.options[i].selected=true;
     }
   }
+  if(document.getElementsByName('case1')[0].innerHTML==""){document.getElementsByName('select1')[0].disabled=true;document.getElementsByName('Brouillon')[0].disabled=true;document.getElementsByName('ConvocVal')[0].disabled=true;document.getElementsByName('Supp')[0].disabled=true;}
+  else{document.getElementsByName('select1')[0].disabled=false;document.getElementsByName('Brouillon')[0].disabled=false;document.getElementsByName('ConvocVal')[0].disabled=false;document.getElementsByName('Supp')[0].disabled=false;}
+  if(document.getElementsByName('case1')[1].innerHTML==""){document.getElementsByName('select2')[0].disabled=true;document.getElementsByName('Brouillon')[1].disabled=true;document.getElementsByName('ConvocVal')[1].disabled=true;document.getElementsByName('Supp')[1].disabled=true;}
+  else {document.getElementsByName('select2')[0].disabled=false;document.getElementsByName('Brouillon')[1].disabled=false;document.getElementsByName('ConvocVal')[1].disabled=false;document.getElementsByName('Supp')[1].disabled=false;}
+  if(document.getElementsByName('case1')[2].innerHTML==""){document.getElementsByName('select3')[0].disabled=true;document.getElementsByName('Brouillon')[2].disabled=true;document.getElementsByName('ConvocVal')[2].disabled=true;document.getElementsByName('Supp')[2].disabled=true;}
+  else {document.getElementsByName('select3')[0].disabled=false;document.getElementsByName('Brouillon')[2].disabled=false;document.getElementsByName('ConvocVal')[2].disabled=false;document.getElementsByName('Supp')[2].disabled=false;}
 
+ let data=document.getElementsByName('case1')[0].innerHTML+";"+document.getElementsByName('case2')[0].innerHTML+";"+document.getElementsByName('case3')[0].innerHTML+";"+document.getElementsByName('case4')[0].innerHTML+";"+document.getElementsByName('case5')[0].innerHTML+";"+document.getElementsByName('case6')[0].innerHTML+";";
+    for(let i = 0 ; i < document.getElementsByName('select1')[0].selectedOptions.length;++i){
+      data+=(document.getElementsByName('select1')[0].selectedOptions[i].value+";");
+    }
+    document.getElementsByName('joueurs1')[0].value=data;
 }
 
 function modifSelect2(){
@@ -243,6 +254,18 @@ function modifSelect2(){
       if(select3.options[i].value==SelectedOptions2[j])select3.options[i].selected=true;
     }
   }
+  if(document.getElementsByName('case1')[0].innerHTML==""){document.getElementsByName('select1')[0].disabled=true;document.getElementsByName('Brouillon')[0].disabled=true;document.getElementsByName('ConvocVal')[0].disabled=true;document.getElementsByName('Supp')[0].disabled=true;}
+  else{document.getElementsByName('select1')[0].disabled=false;document.getElementsByName('Brouillon')[0].disabled=false;document.getElementsByName('ConvocVal')[0].disabled=false;document.getElementsByName('Supp')[0].disabled=false;}
+  if(document.getElementsByName('case1')[1].innerHTML==""){document.getElementsByName('select2')[0].disabled=true;document.getElementsByName('Brouillon')[1].disabled=true;document.getElementsByName('ConvocVal')[1].disabled=true;document.getElementsByName('Supp')[1].disabled=true;}
+  else {document.getElementsByName('select2')[0].disabled=false;document.getElementsByName('Brouillon')[1].disabled=false;document.getElementsByName('ConvocVal')[1].disabled=false;document.getElementsByName('Supp')[1].disabled=false;}
+  if(document.getElementsByName('case1')[2].innerHTML==""){document.getElementsByName('select3')[0].disabled=true;document.getElementsByName('Brouillon')[2].disabled=true;document.getElementsByName('ConvocVal')[2].disabled=true;document.getElementsByName('Supp')[2].disabled=true;}
+  else {document.getElementsByName('select3')[0].disabled=false;document.getElementsByName('Brouillon')[2].disabled=false;document.getElementsByName('ConvocVal')[2].disabled=false;document.getElementsByName('Supp')[2].disabled=false;}
+
+let data=document.getElementsByName('case1')[1].innerHTML+";"+document.getElementsByName('case2')[1].innerHTML+";"+document.getElementsByName('case3')[1].innerHTML+";"+document.getElementsByName('case4')[1].innerHTML+";"+document.getElementsByName('case5')[1].innerHTML+";"+document.getElementsByName('case6')[1].innerHTML+";";
+    for(let i = 0 ; i < document.getElementsByName('select2')[0].selectedOptions.length;++i){
+      data+=(document.getElementsByName('select2')[0].selectedOptions[i].value+";");
+    }
+    document.getElementsByName('joueurs2')[0].value=data;
 }
 
 function modifSelect3(){
@@ -334,20 +357,35 @@ function modifSelect3(){
       if(select2.options[i].value==SelectedOptions2[j])select2.options[i].selected=true;
     }
   }
+
+  if(document.getElementsByName('case1')[0].innerHTML==""){document.getElementsByName('select1')[0].disabled=true;document.getElementsByName('Brouillon')[0].disabled=true;document.getElementsByName('ConvocVal')[0].disabled=true;document.getElementsByName('Supp')[0].disabled=true;}
+  else{document.getElementsByName('select1')[0].disabled=false;document.getElementsByName('Brouillon')[0].disabled=false;document.getElementsByName('ConvocVal')[0].disabled=false;document.getElementsByName('Supp')[0].disabled=false;}
+  if(document.getElementsByName('case1')[1].innerHTML==""){document.getElementsByName('select2')[0].disabled=true;document.getElementsByName('Brouillon')[1].disabled=true;document.getElementsByName('ConvocVal')[1].disabled=true;document.getElementsByName('Supp')[1].disabled=true;}
+  else {document.getElementsByName('select2')[0].disabled=false;document.getElementsByName('Brouillon')[1].disabled=false;document.getElementsByName('ConvocVal')[1].disabled=false;document.getElementsByName('Supp')[1].disabled=false;}
+  if(document.getElementsByName('case1')[2].innerHTML==""){document.getElementsByName('select3')[0].disabled=true;document.getElementsByName('Brouillon')[2].disabled=true;document.getElementsByName('ConvocVal')[2].disabled=true;document.getElementsByName('Supp')[2].disabled=true;}
+  else {document.getElementsByName('select3')[0].disabled=false;document.getElementsByName('Brouillon')[2].disabled=false;document.getElementsByName('ConvocVal')[2].disabled=false;document.getElementsByName('Supp')[2].disabled=false;}
+
+    let data=document.getElementsByName('case1')[2].innerHTML+";"+document.getElementsByName('case2')[2].innerHTML+";"+document.getElementsByName('case3')[2].innerHTML+";"+document.getElementsByName('case4')[2].innerHTML+";"+document.getElementsByName('case5')[2].innerHTML+";"+document.getElementsByName('case6')[2].innerHTML+";";
+    for(let i = 0 ; i < document.getElementsByName('select3')[0].selectedOptions.length;++i){
+      data+=(document.getElementsByName('select3')[0].selectedOptions[i].value+";");
+    }
+    document.getElementsByName('joueurs3')[0].value=data;
 }
 
 function ActualisationDesTables()  {
 
-      while(document.getElementById('tableConvoc').rows.length>8)
+      while(document.getElementById('tableConvoc').rows.length>11)
       {
         document.getElementById('tableConvoc').deleteRow(document.getElementById('tableConvoc').rows.length-1);
       }
-      document.getElementsByName("exempts")[6].setAttribute('style','visibility:hidden');
-      document.getElementsByName("abs")[6].setAttribute('style','visibility:hidden');
-      document.getElementsByName("sus")[6].setAttribute('style','visibility:hidden');
-      document.getElementsByName("ble")[6].setAttribute('style','visibility:hidden');
-      document.getElementsByName("nl")[6].setAttribute('style','visibility:hidden');
-      for(let i = 0 ; i<7 ;i++){
+      for(var i = 6 ;i<10;++i ){
+        document.getElementsByName("exempts")[i].setAttribute('style','visibility:hidden');
+        document.getElementsByName("abs")[i].setAttribute('style','visibility:hidden');
+        document.getElementsByName("sus")[i].setAttribute('style','visibility:hidden');
+        document.getElementsByName("ble")[i].setAttribute('style','visibility:hidden');
+        document.getElementsByName("nl")[i].setAttribute('style','visibility:hidden');
+      }
+      for(let i = 0 ; i<10 ;i++){
         document.getElementsByName("exempts")[i].innerHTML="";
         document.getElementsByName("abs")[i].innerHTML="";
         document.getElementsByName("sus")[i].innerHTML="";
@@ -362,7 +400,8 @@ function ActualisationDesTables()  {
 
       if (jours[jourDeLaSemaine]!="Sunday"){
         alert("Veuillez choisir un dimanche !");
-        document.getElementsByName("dateConvoc")[0].value=anciennedate;
+        document.getElementsByName("dateConvoc")[0].value=anciennedate
+        ActualisationDesTables();
       }
       else{
         anciennedate=input;
@@ -381,6 +420,7 @@ function ActualisationDesTables()  {
               var contenu = JSON.parse(xhttp.response);
               let compt = 0;
               contenu.forEach(function(ligne){
+                if(ligne[0]!="COMPETITION"){
                 if(ligne[3].replaceAll("/","-")==document.getElementsByName("dateConvoc")[0].value){
                     document.getElementsByName("case1")[compt].innerHTML=ligne[0];
                     document.getElementsByName("case2")[compt].innerHTML=ligne[2];
@@ -388,12 +428,23 @@ function ActualisationDesTables()  {
                     document.getElementsByName("case4")[compt].innerHTML=ligne[5];
                     document.getElementsByName("case5")[compt].innerHTML=ligne[4];
                     document.getElementsByName("case6")[compt].innerHTML=ligne[1];
-                   compt++;
+                    ++compt;
+                }
+                else{
+                  if(compt!=3){
+                    document.getElementsByName("case1")[compt].innerHTML="";
+                    document.getElementsByName("case2")[compt].innerHTML="";
+                    document.getElementsByName("case3")[compt].innerHTML="";
+                    document.getElementsByName("case4")[compt].innerHTML="";
+                    document.getElementsByName("case5")[compt].innerHTML="";
+                    document.getElementsByName("case6")[compt].innerHTML="";
+                  }
+                }
                 }
               });
             }
           };
-          xhttp.open("GET","Matchs.json",true);
+          xhttp.open("GET","Matchs.json",false);
           xhttp.send();
 
           var xhttp2 = new XMLHttpRequest();
@@ -589,5 +640,47 @@ function ActualisationDesTables()  {
           if(document.getElementsByName('select3').length==2){
             document.getElementsByName('select3')[0].remove();
           }
+
+          //Desactivation des bouttons si des date sont vide
+          if(document.getElementsByName('case1')[0].innerHTML==""){document.getElementsByName('select1')[0].disabled=true;document.getElementsByName('Brouillon')[0].disabled=true;document.getElementsByName('ConvocVal')[0].disabled=true;document.getElementsByName('Supp')[0].disabled=true;}
+          else{document.getElementsByName('select1')[0].disabled=false;document.getElementsByName('Brouillon')[0].disabled=false;document.getElementsByName('ConvocVal')[0].disabled=false;document.getElementsByName('Supp')[0].disabled=false;}
+           if(document.getElementsByName('case1')[1].innerHTML==""){document.getElementsByName('select2')[0].disabled=true;document.getElementsByName('Brouillon')[1].disabled=true;document.getElementsByName('ConvocVal')[1].disabled=true;document.getElementsByName('Supp')[1].disabled=true;}
+           else {document.getElementsByName('select2')[0].disabled=false;document.getElementsByName('Brouillon')[1].disabled=false;document.getElementsByName('ConvocVal')[1].disabled=false;document.getElementsByName('Supp')[1].disabled=false;}
+           if(document.getElementsByName('case1')[2].innerHTML==""){document.getElementsByName('select3')[0].disabled=true;document.getElementsByName('Brouillon')[2].disabled=true;document.getElementsByName('ConvocVal')[2].disabled=true;document.getElementsByName('Supp')[2].disabled=true;}
+           else {document.getElementsByName('select3')[0].disabled=false;document.getElementsByName('Brouillon')[2].disabled=false;document.getElementsByName('ConvocVal')[2].disabled=false;document.getElementsByName('Supp')[2].disabled=false;}
+      
+
+          //Importation de la BDD pour chargement des selectedoptions
+
+          var xhttp3 = new XMLHttpRequest();
+          xhttp3.onreadystatechange = function() {
+            if(xhttp3.readyState == 4 && xhttp3.status == 200){
+              var convocations = JSON.parse(xhttp3.response);
+              convocations.forEach(function(ligne){
+                if(ligne['date']==document.getElementsByName('dateConvoc')[0].value)
+                {
+                  for(let i = 0 ; i < 3 ; ++i)
+                  {
+                      if(ligne['equipe']==document.getElementsByName('case6')[i].innerHTML)
+                      {
+                        let joueurs = ligne['joueurs'].split(';');
+                        for(let j = 0 ; j<document.getElementsByTagName('select')[i].options.length;++j)
+                        {
+                          if(joueurs.includes(document.getElementsByTagName('select')[i].options[j].value))
+                          {
+                            document.getElementsByTagName('select')[i].options[j].selected=true;
+                            if(i==0) modifSelect1();
+                            else if(i==1) modifSelect2();
+                              else modifSelect3();
+                          }
+                        }
+                      }
+                  }
+                }
+              });
+            }
+          };
+          xhttp3.open("GET","Convocations.json",false);
+          xhttp3.send();
       }
 }

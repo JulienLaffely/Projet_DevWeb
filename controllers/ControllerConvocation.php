@@ -9,8 +9,12 @@
 		public function __construct()
 		{
 					$this->_model = new modelConvocation();
+					if(isset($_POST['Brouillon']))$this->NewBrouillon();
+					if(isset($_POST['ConvocVal']))$this->Validation();
+					if(isset($_POST['Supp']))$this->Suppression();
 					$this->_view = new View('Convocation');
 					$this->_view->generate();
+					$this->FichierJsonConvoc();
 					$this->Affichage();
 		}
 
@@ -139,9 +143,64 @@
 							<td id='tdConvoc' style='visibility:hidden;' name='sus'></td>
 							<td id='tdConvoc' style='visibility:hidden;' name='abs'></td>
 						</tr>
-						
+						<tr>
+							<td id='tdConvoc' style='visibility:hidden;'></td>
+							<td id='tdConvocBout' ><input type='submit' name='Brouillon' value='Enregistrer Brouillon n°1'/></td>
+							<td id='tdConvocBout' ><input type='submit' name='Brouillon' value='Enregistrer Brouillon n°2'/></td>
+							<td id='tdConvocBout' ><input type='submit' name='Brouillon' value='Enregistrer Brouillon n°3'/></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='exempts'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='nl'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='ble'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='sus'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='abs'></td>
+						</tr>
+						<tr>
+							<td id='tdConvoc' style='visibility:hidden;'></td>
+							<td id='tdConvocBout' ><input type='submit' name='ConvocVal' value='Valider Convocation n°1'/></td>
+							<td id='tdConvocBout' ><input type='submit' name='ConvocVal' value='Valider Convocation n°2'/></td>
+							<td id='tdConvocBout' ><input type='submit' name='ConvocVal' value='Valider Convocation n°3'/></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='exempts'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='nl'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='ble'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='sus'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='abs'></td>
+						</tr>
+						<tr>
+							<td id='tdConvoc' style='visibility:hidden;'></td>
+							<td id='tdConvocBout' ><input type='submit' name='Supp' value='Supprimer Brouillon/Convocation n°1'/></td>
+							<td id='tdConvocBout' ><input type='submit' name='Supp' value='Supprimer Brouillon/Convocation n°2'/></td>
+							<td id='tdConvocBout' ><input type='submit' name='Supp' value='Supprimer Brouillon/Convocation n°3'/></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='exempts'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='nl'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='ble'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='sus'></td>
+							<td id='tdConvoc' style='visibility:hidden;' name='abs'></td>
+						</tr>
 					</table>
+					<input type='hidden' value='' name='joueurs1'/>
+					<input type='hidden' value='' name='joueurs2'/>
+					<input type='hidden' value='' name='joueurs3'/>
 				  </form>
-			<script>ActualisationDesTables()</script>";	  
+			<script>ActualisationDesTables()</script></br></br>";	
+		}
+
+		public function FichierJsonConvoc(){
+			$convocations = $this->_model->getConvocations();
+			$JsonConvoc=fopen('Convocations.json','w+');
+			fwrite($JsonConvoc,json_encode($convocations));
+			fclose($JsonConvoc);
+		}
+
+		public function NewBrouillon()
+		{
+			$donnees=explode(";",$_POST['joueurs'.substr($_POST['Brouillon'],-1)]);
+			unset($donnees[count($donnees)-1]);
+			if(count($donnees)!=0){
+				$this->_model->SupprimerBrouillon($donnees);
+				$this->_model->ajoutBrouillon($donnees);
+			}
+			else {
+				echo "<script>alert('Aucun joueur séléctionné ! Enregistrement annulé !')</script>";
+			}
 		}
 	}
