@@ -26,7 +26,7 @@ class modelConvocation extends Model
 		return $this->_abs;
 	}
 
-	public function SupprimerBrouillon($data)
+	public function SupprimerConvoc($data)
 	{
 		$bdd=$this->getBdd();
 		$date=$_POST['dateConvoc'];	
@@ -50,5 +50,16 @@ class modelConvocation extends Model
 		$bdd=$this->getBdd();
 		$bdd = $bdd->query('SELECT date , equipe , joueurs , type FROM Convocations');
 		return $bdd->fetchAll(PDO::FETCH_ASSOC);
+	}
+
+	public function Validation($data)
+	{
+		$bdd=$this->getBdd();
+		$joueurs="";
+		for($i=6;$i<sizeof($data);++$i){
+			$joueurs.=$data[$i].";";
+		}
+		$date=$_POST['dateConvoc'];
+		$bdd->query("INSERT INTO Convocations VALUES ('$date','$data[0]','$data[5]','$data[1]','$data[2]','$data[3]','$data[4]','$joueurs','Valider')");
 	}
 }

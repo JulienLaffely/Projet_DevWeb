@@ -6,7 +6,8 @@
 		public function __construct()
 		{
 					if(isset($_POST['Delete'])) $this->deleteCSV();
-					if(isset($_POST['MajCSV'])||isset($_POST['AjoutMatch'])) $this->MajCSV();
+					if(isset($_POST['MajCSV'])) $this->MajCSV();
+					if(isset($_POST['AjoutMatch'])) $this->ajout();
 					$this->_view = new View('Calendrier');
 					$this->_view->generate();
 					$this->AfficheCalendrier();
@@ -179,6 +180,9 @@
 			}
 			echo "<input type='hidden' name='nbMatch' value=$i /> </form>"
 				 ;
+			if(isset($_POST['AjoutMatch'])){
+				echo "<script>document.getElementsByName('MajCSV')[0].click()</script>";
+			}
 		}
 
 		public function deleteCSV()
@@ -252,24 +256,7 @@
 			}
 
 			if(isset($_POST['AjoutMatch'])){
-				if($_POST['ajoutCompet']=="" ||$_POST['ajoutEq']=="" ||$_POST['ajoutEqA']=="" ||$_POST['ajoutDate']=="" ||$_POST['ajoutHeure']=="" ||$_POST['ajoutTerrain']=="" ||$_POST['ajoutSite']=="" )
-				{
-					echo "<script>alert('Merci de remplir tous les champs ! Aucune rencontre ajouter.')</script>";
-				}
-				else {
-					if(date("l",strtotime($_POST['ajoutDate']))=="Sunday"){
-						$calendrier[$_POST['nbMatch']][0]=$_POST['ajoutCompet'];
-						$calendrier[$_POST['nbMatch']][1]=$_POST['ajoutEq'];
-						$calendrier[$_POST['nbMatch']][2]=$_POST['ajoutEqA'];
-						$calendrier[$_POST['nbMatch']][3]=$_POST['ajoutDate'];
-						$calendrier[$_POST['nbMatch']][4]=$_POST['ajoutHeure'];
-						$calendrier[$_POST['nbMatch']][5]=$_POST['ajoutTerrain'];
-						$calendrier[$_POST['nbMatch']][6]=$_POST['ajoutSite'];	
-					}
-					else {
-						echo "<script>alert('Date incorrect ! Merci de choisir un dimanche. Rencontre non ajouter.')</script>";
-					}
-				}
+				
 			}
 
 			$calendrierGrouperParDate= $this->group_by(3,$calendrier);
@@ -357,6 +344,33 @@
 				fclose($fichierCSV);
 			}
 
+		}
+
+		public function ajout()
+		{
+			if($_POST['ajoutCompet']=="" ||$_POST['ajoutEq']=="" ||$_POST['ajoutEqA']=="" ||$_POST['ajoutDate']=="" ||$_POST['ajoutHeure']=="" ||$_POST['ajoutTerrain']=="" ||$_POST['ajoutSite']=="" )
+				{
+					echo "<script>alert('Merci de remplir tous les champs ! Aucune rencontre ajouter.')</script>";
+				}
+				else {
+					if(date("l",strtotime($_POST['ajoutDate']))=="Sunday"){
+							$new = [];
+							$new[]=$_POST['ajoutCompet'];
+							$new[]=$_POST['ajoutEq'];
+							$new[]=$_POST['ajoutEqA'];
+							$new[]=$_POST['ajoutDate'];
+							$new[]=$_POST['ajoutHeure'];
+							$new[]=$_POST['ajoutTerrain'];
+							$new[]=$_POST['ajoutSite'];
+						if (($fichierCSV = fopen("Matchs.csv", "a")) !== FALSE){
+    							fputcsv($fichierCSV, $new,";");
+							fclose($fichierCSV);
+						}		
+					}
+					else {
+						echo "<script>alert('Date incorrect ! Merci de choisir un dimanche. Rencontre non ajouter.')</script>";
+					}
+				}
 		}
 	}
 ?>

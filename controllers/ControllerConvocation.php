@@ -196,11 +196,35 @@
 			$donnees=explode(";",$_POST['joueurs'.substr($_POST['Brouillon'],-1)]);
 			unset($donnees[count($donnees)-1]);
 			if(count($donnees)!=0){
-				$this->_model->SupprimerBrouillon($donnees);
+				$this->_model->SupprimerConvoc($donnees);
 				$this->_model->ajoutBrouillon($donnees);
 			}
 			else {
 				echo "<script>alert('Aucun joueur séléctionné ! Enregistrement annulé !')</script>";
 			}
 		}
+
+		public function Suppression()
+		{
+			$donnees=explode(";",$_POST['joueurs'.substr($_POST['Supp'],-1)]);
+			unset($donnees[count($donnees)-1]);
+			$this->_model->SupprimerConvoc($donnees);
+		}
+
+		public function Validation()
+		{
+			$donnees=explode(";",$_POST['joueurs'.substr($_POST['ConvocVal'],-1)]);
+			unset($donnees[count($donnees)-1]);
+			if(count($donnees)>=17 && count($donnees)<=21 && $donnees[4]!=""){
+				$this->_model->SupprimerConvoc($donnees);
+				$this->_model->Validation($donnees);
+			}
+			else {
+				if(strlen($donnees[4])==0) echo "<script>alert('Aucune heure défini pour la rencontre . Validation de la convocation impossible. Enregistrer en tant que brouillon.')</script>";
+				else echo "<script>alert('Vous devez sélectionné entre 11 et 14 joueurs pour la rencontre ! Convocation Enregistrer en tant que brouillon')</script>";
+				$this->_model->SupprimerConvoc($donnees);
+				$this->_model->ajoutBrouillon($donnees);
+			}
+		}
+
 	}

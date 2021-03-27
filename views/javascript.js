@@ -659,6 +659,7 @@ function ActualisationDesTables()  {
               convocations.forEach(function(ligne){
                 if(ligne['date']==document.getElementsByName('dateConvoc')[0].value)
                 {
+
                   for(let i = 0 ; i < 3 ; ++i)
                   {
                       if(ligne['equipe']==document.getElementsByName('case6')[i].innerHTML)
@@ -673,6 +674,11 @@ function ActualisationDesTables()  {
                             else if(i==1) modifSelect2();
                               else modifSelect3();
                           }
+                        }
+                        if(ligne['type']=="Valider"){
+                          document.getElementsByTagName('select')[i].disabled=true;
+                          document.getElementsByName('ConvocVal')[i].disabled=true;
+                          document.getElementsByName('Brouillon')[i].disabled=true;
                         }
                       }
                   }
